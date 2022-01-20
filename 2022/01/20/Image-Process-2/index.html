@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Image_Process_2 | AlanLiang's Blok</title><script src="//unpkg.com/valine/dist/Valine.min.js"></script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="AlanLiang's Blok" type="application/atom+xml">
+</head><body style="background-image:url(https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg);"><header><nav><a href="/">Home</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><h1>Image_Process_2</h1><hr></div><div id="post-content"><h3 id="运行环境及编译工具"><a href="#运行环境及编译工具" class="headerlink" title="运行环境及编译工具"></a>运行环境及编译工具</h3><ul>
+<li>Windows</li>
+<li>VS Code</li>
+</ul>
+<h3 id="编程语言及库版本"><a href="#编程语言及库版本" class="headerlink" title="编程语言及库版本"></a>编程语言及库版本</h3><table>
+<thead>
+<tr>
+<th>库</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Python</td>
+<td>3.7.0</td>
+</tr>
+<tr>
+<td>copy</td>
+<td>无</td>
+</tr>
+<tr>
+<td>numpy</td>
+<td>1.19.2</td>
+</tr>
+<tr>
+<td>opencv</td>
+<td>3.4.2</td>
+</tr>
+<tr>
+<td>PIL</td>
+<td>8.1.0</td>
+</tr>
+<tr>
+<td>matplotlib</td>
+<td>3.4.3</td>
+</tr>
+</tbody></table>
+<h3 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h3><ul>
+<li>HW_2.py</li>
+<li>HW_2.ipynb</li>
+<li>在HW_2.ipynb中执行，详细程序信息在HW_2.py中</li>
+</ul>
+<h3 id="问题-1-通过计算一维傅里叶变换实现图像二维快速傅里叶变换（10-分）"><a href="#问题-1-通过计算一维傅里叶变换实现图像二维快速傅里叶变换（10-分）" class="headerlink" title="问题 1 通过计算一维傅里叶变换实现图像二维快速傅里叶变换（10 分）"></a>问题 1 通过计算一维傅里叶变换实现图像二维快速傅里叶变换（10 分）</h3><p>实现一个函数 F=dft2D(f), 其中 f 是一个灰度源图像，F 是其对应的二维快速傅里叶变换 (FFT)图像. 具体实现要求按照课上的介绍通过两轮一维傅里叶变换实现。也就是首先计算 源图像每一行的一维傅里叶变换，然后对于得到的结果计算其每一列的一维傅里叶变换。 如果实现采用 MATLAB, 可以直接调用函数 fft 计算一维傅里叶变换。如果采用其他语言， 请选择并直接调用相应的一维傅里叶变换函数。</p>
+<h4 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h4><p>FFT与IFFT算法主要是利用了函数“值表示”的思想和傅里叶正交的性质，依靠递归的方法可以大大缩减程序量。一维变换的编程基本思路如下图所示，对二维图像来说，先进行每行的变换，再在行变换的基础上进行列变换。</p>
+<p><img src="/2022/01/20/Image-Process-2/image-20211026225526745.png" alt="image-20211026225526745"></p>
+<h4 id="如何运行"><a href="#如何运行" class="headerlink" title="如何运行"></a>如何运行</h4><p>问题一包含两个函数，均在HW_2.py文件中，在HW_2.ipynb中调试执行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> HW_2 <span class="hljs-keyword">import</span> *<br><span class="hljs-comment"># 递归实现一维fft算法</span><br>oned_fft(arr):<br><span class="hljs-comment"># 对图像的fft</span><br>dft2D(f):<br></code></pre></td></tr></table></figure>
+
+<h3 id="问题2-图像二维快速傅里叶逆变换-（10-分）"><a href="#问题2-图像二维快速傅里叶逆变换-（10-分）" class="headerlink" title="问题2 图像二维快速傅里叶逆变换 （10 分）"></a>问题2 图像二维快速傅里叶逆变换 （10 分）</h3><p>实现一个函数 f=idft2D(F), 其中 F 是一个灰度图像的傅里叶变换，f 是其对应的二维快速傅 里叶逆变换 (IFFT)图像，也就是灰度源图像. 具体实现要求按照课上的介绍通过类似正向变 换的方式实现。</p>
+<h4 id="基本思路-1"><a href="#基本思路-1" class="headerlink" title="基本思路"></a>基本思路</h4><p>基本思路与上相同，需要注意的是最后得到的结果需除去图像尺寸$M\times N$</p>
+<h4 id="如何运行-1"><a href="#如何运行-1" class="headerlink" title="如何运行"></a>如何运行</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> HW_2 <span class="hljs-keyword">import</span> *<br><span class="hljs-comment"># 递归实现一维fft算法</span><br>oned_ifft(arr):<br><span class="hljs-comment"># 对图像的fft</span><br>idft2D(f):<br></code></pre></td></tr></table></figure>
+
+<h3 id="问题3-测试图像二维快速傅里叶变换与逆变换-（8-分）"><a href="#问题3-测试图像二维快速傅里叶变换与逆变换-（8-分）" class="headerlink" title="问题3 测试图像二维快速傅里叶变换与逆变换 （8 分）"></a>问题3 测试图像二维快速傅里叶变换与逆变换 （8 分）</h3><p>对于给定的输入图像 rose512.tif, 首先将其灰度范围通过归一化调整到[0,1]. 将此归一化的 图像记为 f. 首先调用问题 1 下实现的函数 dft2D 计算其傅里叶变换，记为 F。然后调用问题 2 下的函数 idft2D 计算 F 的傅里叶逆变换，记为 g. 计算并显示误差图像 d = f-g.</p>
+<h4 id="基本思路-2"><a href="#基本思路-2" class="headerlink" title="基本思路"></a>基本思路</h4><p>基本思路为：读图f - 归一化f - FFT变换F - IFFT变换g - 误差图像d</p>
+<h4 id="如何运行-2"><a href="#如何运行-2" class="headerlink" title="如何运行"></a>如何运行</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> HW_2 <span class="hljs-keyword">import</span> *<br>Q_3()<br></code></pre></td></tr></table></figure>
+
+<h4 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h4><p><img src="/2022/01/20/Image-Process-2/Q_3.png" alt="Q_3"></p>
+<h3 id="问题4-计算图像的中心化二维快速傅里叶变换与谱图像-12-分"><a href="#问题4-计算图像的中心化二维快速傅里叶变换与谱图像-12-分" class="headerlink" title="问题4 计算图像的中心化二维快速傅里叶变换与谱图像 (12 分)"></a>问题4 计算图像的中心化二维快速傅里叶变换与谱图像 (12 分)</h3><p>我们的目标是复现下图中的结果。首先合成矩形物体图像，建议图像尺寸为 512×512，矩形位于图像中心，建议尺寸为 60 像素长，10 像素宽，灰度假设已归一化设为 1. 对于输入图像 f 计算其中心化二维傅里叶变换 F。然后计算对应的谱图像 S=log(1+abs(F)). 显示该谱图像。</p>
+<h4 id="基本思路-3"><a href="#基本思路-3" class="headerlink" title="基本思路"></a>基本思路</h4><ul>
+<li>创建空白图像f，像素值均为0</li>
+<li>将空白图像中心$10\times 60$区域的像素值置为1</li>
+<li>中心化f，得到f_shift:$f_shift(x,y)=(-1)^{x+y}f(x,y)$</li>
+<li>分别对f，和f_shift进行fft变换得到F，和F_shift</li>
+<li>对F_shift计算谱图像</li>
+</ul>
+<h4 id="如何运行-3"><a href="#如何运行-3" class="headerlink" title="如何运行"></a>如何运行</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> HW_2 <span class="hljs-keyword">import</span> *<br>Q_4()<br></code></pre></td></tr></table></figure>
+
+<h4 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h4><p><img src="/2022/01/20/Image-Process-2/Q_4.png" alt="Q_4"></p>
+<h3 id="选做题-测试更多图像的二维快速傅里叶变换-10-分"><a href="#选做题-测试更多图像的二维快速傅里叶变换-10-分" class="headerlink" title="选做题 测试更多图像的二维快速傅里叶变换 (10 分)"></a>选做题 测试更多图像的二维快速傅里叶变换 (10 分)</h3><p>计算其他 5 幅图像的二维快速傅里叶变换： house.tif, house02.tif, lena_gray_512.tif, lunar_surface.tif, characters_test_pattern.tif。注意，有些图像的尺寸不是 2 的整数次幂，需要 进行相应的像素填补处理。如果图像有多个通道可以选择其中的一个通道进行计算。</p>
+<h4 id="基本思路-4"><a href="#基本思路-4" class="headerlink" title="基本思路"></a>基本思路</h4><ul>
+<li>判断图像尺寸是否为二次幂，并返回最近的二次幂值</li>
+<li>以上述返回的二次幂值为尺寸创建zero图像，并原图大小的范围内用原图像素填充</li>
+<li>对每张图像进行Q3的操作</li>
+</ul>
+<h4 id="如何运行-4"><a href="#如何运行-4" class="headerlink" title="如何运行"></a>如何运行</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> HW_2 <span class="hljs-keyword">import</span> *<br>Q_5(<span class="hljs-string">&quot;./house.tif&quot;</span>)<br>Q_5(<span class="hljs-string">&quot;./house02.tif&quot;</span>)<br>Q_5(<span class="hljs-string">&quot;./lena_gray_512.tif&quot;</span>)<br>Q_5(<span class="hljs-string">&quot;./lunar_surface.tif&quot;</span>)<br>Q_5(<span class="hljs-string">&quot;./characters_test_pattern.tif&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<h4 id="运行结果-2"><a href="#运行结果-2" class="headerlink" title="运行结果"></a>运行结果</h4><p><img src="/2022/01/20/Image-Process-2/Q_5_house.png" alt="Q_5_house"></p>
+<p><img src="/2022/01/20/Image-Process-2/Q_5_house02.png" alt="Q_5_house02"></p>
+<p><img src="/2022/01/20/Image-Process-2/Q_5_lena_gray_512.png" alt="Q_5_lena_gray_512"></p>
+<p><img src="/2022/01/20/Image-Process-2/Q_5_lunar_surface.png" alt="Q_5_lunar_surface"></p>
+<p><img src="/2022/01/20/Image-Process-2/Q_5_characters_test_pattern.png" alt="Q_5_characters_test_pattern"></p>
+<div id="paginator"></div></div><div id="post-footer"><hr><a href="/2022/01/20/Image_Process_1/">Image Process Ⅰ Next →</a><hr></div><div id="bottom-btn"><a id="to-index" href="#post-index" title="index">≡</a><a id="to-top" href="#post-title" title="to top">∧</a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/"> Dr.AlanLiang</a></h1><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">2</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">1</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">0</span></div></section></div><div id="aside-block"><h1>INDEX</h1><div id="post-index"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E5%8F%8A%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7"><span class="toc-number">1.</span> <span class="toc-text">运行环境及编译工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%8F%8A%E5%BA%93%E7%89%88%E6%9C%AC"><span class="toc-number">2.</span> <span class="toc-text">编程语言及库版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">可执行文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98-1-%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E4%B8%80%E7%BB%B4%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E5%AE%9E%E7%8E%B0%E5%9B%BE%E5%83%8F%E4%BA%8C%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%EF%BC%8810-%E5%88%86%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">问题 1 通过计算一维傅里叶变换实现图像二维快速傅里叶变换（10 分）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF"><span class="toc-number">4.1.</span> <span class="toc-text">基本思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C"><span class="toc-number">4.2.</span> <span class="toc-text">如何运行</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%982-%E5%9B%BE%E5%83%8F%E4%BA%8C%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%82%85%E9%87%8C%E5%8F%B6%E9%80%86%E5%8F%98%E6%8D%A2-%EF%BC%8810-%E5%88%86%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">问题2 图像二维快速傅里叶逆变换 （10 分）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF-1"><span class="toc-number">5.1.</span> <span class="toc-text">基本思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C-1"><span class="toc-number">5.2.</span> <span class="toc-text">如何运行</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%983-%E6%B5%8B%E8%AF%95%E5%9B%BE%E5%83%8F%E4%BA%8C%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E9%80%86%E5%8F%98%E6%8D%A2-%EF%BC%888-%E5%88%86%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">问题3 测试图像二维快速傅里叶变换与逆变换 （8 分）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF-2"><span class="toc-number">6.1.</span> <span class="toc-text">基本思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C-2"><span class="toc-number">6.2.</span> <span class="toc-text">如何运行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="toc-number">6.3.</span> <span class="toc-text">运行结果</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%984-%E8%AE%A1%E7%AE%97%E5%9B%BE%E5%83%8F%E7%9A%84%E4%B8%AD%E5%BF%83%E5%8C%96%E4%BA%8C%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E4%B8%8E%E8%B0%B1%E5%9B%BE%E5%83%8F-12-%E5%88%86"><span class="toc-number">7.</span> <span class="toc-text">问题4 计算图像的中心化二维快速傅里叶变换与谱图像 (12 分)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF-3"><span class="toc-number">7.1.</span> <span class="toc-text">基本思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C-3"><span class="toc-number">7.2.</span> <span class="toc-text">如何运行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-1"><span class="toc-number">7.3.</span> <span class="toc-text">运行结果</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E5%81%9A%E9%A2%98-%E6%B5%8B%E8%AF%95%E6%9B%B4%E5%A4%9A%E5%9B%BE%E5%83%8F%E7%9A%84%E4%BA%8C%E7%BB%B4%E5%BF%AB%E9%80%9F%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2-10-%E5%88%86"><span class="toc-number">8.</span> <span class="toc-text">选做题 测试更多图像的二维快速傅里叶变换 (10 分)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF-4"><span class="toc-number">8.1.</span> <span class="toc-text">基本思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C-4"><span class="toc-number">8.2.</span> <span class="toc-text">如何运行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-2"><span class="toc-number">8.3.</span> <span class="toc-text">运行结果</span></a></li></ol></li></ol></div></div><footer><nobr><span class="text-title">©</span><span class="text-content">1970 to 2020</span></nobr><wbr><nobr><span class="text-title">ICP</span><span class="text-content">——备案号——</span></nobr><wbr><wbr><nobr>published with&nbsp;<a target="_blank" rel="noopener" href="http://hexo.io">Hexo&nbsp;</a></nobr><wbr><nobr>Theme&nbsp;<a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight&nbsp;</a></nobr><wbr><nobr>by&nbsp;<a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/arknights.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script></body></html>
