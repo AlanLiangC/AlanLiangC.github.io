@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>VIT | AlanLiang's Blok</title><script src="//unpkg.com/valine/dist/Valine.min.js"></script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="AlanLiang's Blok" type="application/atom+xml">
+</head><body style="background-image:url(https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg);"><header><nav><a href="/">Home</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><h1>VIT</h1><hr></div><div id="post-content"><h2 id="AN-IMAGE-IS-WORTH-16X16-WORDS"><a href="#AN-IMAGE-IS-WORTH-16X16-WORDS" class="headerlink" title="AN IMAGE IS WORTH 16X16 WORDS:"></a>AN IMAGE IS WORTH 16X16 WORDS:</h2><p>TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE</p>
+<ul>
+<li>Transformer可以很好的抗遮挡</li>
+</ul>
+<h4 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h4><p>基于自注意的架构，特别是 Transformers (Vaswani et al. ，2017) ，已经成为自然语言处理(NLP)中的选择模型。主要的方法是在大型文本语料库上预先训练，然后在较小的特定任务数据集上进行微调(Devlin 等人，2019)。由于变形金刚的计算效率和可扩展性，它已经成为可能的训练模型的空前规模，超过10亿的参数(布朗等人，2020年; Lepikhin 等人，2020年)。随着模型和数据集的增长，仍然<strong>没有性能饱和</strong>的迹象。</p>
+<p>然而，在计算机视觉领域，CNN结构仍然占主导地位(LeCun 等人，1989; Krizhevsky 等人，2012; He 等人，2016)。受到 NLP 成功的启发，多个作品尝试将 cnn 类型的架构与自我注意结合起来(Wang 等人，2018; Carion 等人，2020) ，有些完全替换了卷积(Ramachandran 等人，2019; Wang 等人，2020a)。后者虽然在理论上是有效的，但是由于使用了专门的注意力模式，还没有在现代硬件加速器上有效地扩展。因此，在大规模图像识别中，经典的类 ResNet 架构仍然是最先进的(Mahajan 等人，2018; Xie 等人，2020; Kolesnikov 等人，2020)。</p>
+<p><strong>………这个工作并不是开创性的</strong></p>
+<p>与我们最相关的是 Cordonnier 等人(2020)的模型，它从输入图像中提取2 × 2大小的斑块，并在顶部应用完全自我注意。这个模型非常类似于 ViT，但我们的工作进一步证明，大规模的预训练使香草变压器具有竞争力(甚至优于)最先进的 CNN。此外，Cordonnier 等人(2020)使用了2 × 2像素的小斑块尺寸，这使得该模型仅适用于小分辨率图像，而我们也处理中分辨率图像。</p>
+<p><strong>………</strong></p>
+<p>当在中等规模的数据集上训练时，如 ImageNet，没有很强的规范化，这些模型产生的准确度比同等规模的 renets 低了几个百分点。这个看起来令人沮丧的结果可能是预料之中的: Transformer缺少一些归纳偏置。比如CNN具有：</p>
+<ul>
+<li>“locality”：相邻的物体具有相似的属性</li>
+<li>“平移等变形”：先平移或者是先卷积结果是一样的</li>
+</ul>
+<p>所以就有了很多先验信息，而Transfoemer没有，所以需要更多的训练数据。</p>
+<h4 id="2-方法"><a href="#2-方法" class="headerlink" title="2 方法"></a>2 方法</h4><img src="/2022/05/04/VIT/image-20220325101717783.png" alt="image-20220326102454217" style="zoom:80%;">
+
+<img src="/2022/05/04/VIT/image-20220326102533892.png" alt="image-20220326102533892" style="zoom: 25%;">
+
+<h4 id="3-Self-Attention的计算方式"><a href="#3-Self-Attention的计算方式" class="headerlink" title="3 Self-Attention的计算方式"></a>3 Self-Attention的计算方式</h4><img src="/2022/05/04/VIT/v2-8628bf2c2bb9a7ee2c4a0fb870ab32b9_r.jpg" alt="preview" style="zoom:80%;"><div id="paginator"></div></div><div id="post-footer"><hr><a href="/2022/05/04/Attention-is-all-you-need/">Attention is all you need Next →</a><hr></div><div id="bottom-btn"><a id="to-index" href="#post-index" title="index">≡</a><a id="to-top" href="#post-title" title="to top">∧</a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/"> Dr.AlanLiang</a></h1><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">11</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">7</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">4</span></div></section></div><div id="aside-block"><h1>INDEX</h1><div id="post-index"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AN-IMAGE-IS-WORTH-16X16-WORDS"><span class="toc-number">1.</span> <span class="toc-text">AN IMAGE IS WORTH 16X16 WORDS:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%BC%95%E8%A8%80"><span class="toc-number">1.0.1.</span> <span class="toc-text">1 引言</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%96%B9%E6%B3%95"><span class="toc-number">1.0.2.</span> <span class="toc-text">2 方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Self-Attention%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E5%BC%8F"><span class="toc-number">1.0.3.</span> <span class="toc-text">3 Self-Attention的计算方式</span></a></li></ol></li></ol></li></ol></div></div><footer><nobr><span class="text-title">©</span><span class="text-content">1970 to 2020</span></nobr><wbr><nobr><span class="text-title">ICP</span><span class="text-content">——备案号——</span></nobr><wbr><wbr><nobr>published with&nbsp;<a target="_blank" rel="noopener" href="http://hexo.io">Hexo&nbsp;</a></nobr><wbr><nobr>Theme&nbsp;<a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight&nbsp;</a></nobr><wbr><nobr>by&nbsp;<a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/arknights.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script></body></html>

@@ -6,7 +6,7 @@
   <link href="https://alanliangc.github.io/atom.xml" rel="self"/>
   
   <link href="https://alanliangc.github.io/"/>
-  <updated>2022-05-04T02:12:53.653Z</updated>
+  <updated>2022-05-04T02:21:16.342Z</updated>
   <id>https://alanliangc.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VIT</title>
+    <link href="https://alanliangc.github.io/2022/05/04/VIT/"/>
+    <id>https://alanliangc.github.io/2022/05/04/VIT/</id>
+    <published>2022-05-04T02:20:27.000Z</published>
+    <updated>2022-05-04T02:21:16.342Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="AN-IMAGE-IS-WORTH-16X16-WORDS"><a href="#AN-IMAGE-IS-WORTH-16X16-WORDS" class="headerlink" title="AN IMAGE IS WORTH 16X16 WORDS:"></a>AN IMAGE IS WORTH 16X16 WORDS:</h2><p>TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE</p><ul><li>Transformer可以很好的抗遮挡</li></ul><h4 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h4><p>基于自注意的架构，特别是 Transformers (Vaswani et al. ，2017) ，已经成为自然语言处理(NLP)中的选择模型。主要的方法是在大型文本语料库上预先训练，然后在较小的特定任务数据集上进行微调(Devlin 等人，2019)。由于变形金刚的计算效率和可扩展性，它已经成为可能的训练模型的空前规模，超过10亿的参数(布朗等人，2020年; Lepikhin 等人，2020年)。随着模型和数据集的增长，仍然<strong>没有性能饱和</strong>的迹象。</p><p>然而，在计算机视觉领域，CNN结构仍然占主导地位(LeCun 等人，1989; Krizhevsky 等人，2012; He 等人，2016)。受到 NLP 成功的启发，多个作品尝试将 cnn 类型的架构与自我注意结合起来(Wang 等人，2018; Carion 等人，2020) ，有些完全替换了卷积(Ramachandran 等人，2019; Wang 等人，2020a)。后者虽然在理论上是有效的，但是由于使用了专门的注意力模式，还没有在现代硬件加速器上有效地扩展。因此，在大规模图像识别中，经典的类 ResNet 架构仍然是最先进的(Mahajan 等人，2018; Xie 等人，2020; Kolesnikov 等人，2020)。</p><p><strong>………这个工作并不是开创性的</strong></p><p>与我们最相关的是 Cordonnier 等人(2020)的模型，它从输入图像中提取2 × 2大小的斑块，并在顶部应用完全自我注意。这个模型非常类似于 ViT，但我们的工作进一步证明，大规模的预训练使香草变压器具有竞争力(甚至优于)最先进的 CNN。此外，Cordonnier 等人(2020)使用了2 × 2像素的小斑块尺寸，这使得该模型仅适用于小分辨率图像，而我们也处理中分辨率图像。</p><p><strong>………</strong></p><p>当在中等规模的数据集上训练时，如 ImageNet，没有很强的规范化，这些模型产生的准确度比同等规模的 renets 低了几个百分点。这个看起来令人沮丧的结果可能是预料之中的: Transformer缺少一些归纳偏置。比如CNN具有：</p><ul><li>“locality”：相邻的物体具有相似的属性</li><li>“平移等变形”：先平移或者是先卷积结果是一样的</li></ul><p>所以就有了很多先验信息，而Transfoemer没有，所以需要更多的训练数据。</p><h4 id="2-方法"><a href="#2-方法" class="headerlink" title="2 方法"></a>2 方法</h4><img src="/2022/05/04/VIT/image-20220325101717783.png" alt="image-20220326102454217" style="zoom:80%;"><img src="/2022/05/04/VIT/image-20220326102533892.png" alt="image-20220326102533892" style="zoom: 25%;"><h4 id="3-Self-Attention的计算方式"><a href="#3-Self-Attention的计算方式" class="headerlink" title="3 Self-Attention的计算方式"></a>3 Self-Attention的计算方式</h4><img src="/2022/05/04/VIT/v2-8628bf2c2bb9a7ee2c4a0fb870ab32b9_r.jpg" alt="preview" style="zoom:80%;">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;AN-IMAGE-IS-WORTH-16X16-WORDS&quot;&gt;&lt;a href=&quot;#AN-IMAGE-IS-WORTH-16X16-WORDS&quot; class=&quot;headerlink&quot; title=&quot;AN IMAGE IS WORTH 16X16 WORDS:&quot;&gt;&lt;/</summary>
+      
+    
+    
+    
+    <category term="Computer Vision" scheme="https://alanliangc.github.io/categories/Computer-Vision/"/>
+    
+    
+    <category term="Transformer,Attention" scheme="https://alanliangc.github.io/tags/Transformer-Attention/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Attention is all you need</title>
+    <link href="https://alanliangc.github.io/2022/05/04/Attention-is-all-you-need/"/>
+    <id>https://alanliangc.github.io/2022/05/04/Attention-is-all-you-need/</id>
+    <published>2022-05-04T02:17:33.000Z</published>
+    <updated>2022-05-04T02:19:40.800Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Attention-Is-All-You-Need"><a href="#Attention-Is-All-You-Need" class="headerlink" title="Attention Is All You Need"></a>Attention Is All You Need</h2><h4 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h4><p>在阅读Point Transformer时一些细节记不太准了，还是将原文中的一些细节记录一下吧。</p><h4 id="2-模型相关细节"><a href="#2-模型相关细节" class="headerlink" title="2 模型相关细节"></a>2 模型相关细节</h4><img src="/2022/05/04/Attention-is-all-you-need/image-20220404162432816.png" alt="image-20220404162432816" style="zoom:80%;"><p>关于模型，要注意模型中突出的<strong>残差设置</strong>，并且经过现在的研究论证，<strong>引起transformer突出作用的成分，可能不在与Self Transfoemer</strong>。很多东西，缺一不可。</p><h4 id="2-1-Layer-normalization"><a href="#2-1-Layer-normalization" class="headerlink" title="2.1. Layer normalization"></a>2.1. Layer normalization</h4><img src="/2022/05/04/Attention-is-all-you-need/image-20220404163005283.png" alt="image-20220404163005283" style="zoom:80%;"><p>与Batch normalization的差别从图中可以很容易的看出来，前者是在整个Feature层面进行的，而后者是在整个Batch层上进行的。</p><h4 id="2-2-Attention"><a href="#2-2-Attention" class="headerlink" title="2.2 Attention"></a>2.2 Attention</h4><img src="/2022/05/04/Attention-is-all-you-need/image-20220404163510649.png" alt="image-20220404163510649" style="zoom:80%;"><ul><li><strong>Scaled Dot-Product Attention</strong></li></ul><img src="/2022/05/04/Attention-is-all-you-need/image-20220404163616187.png" alt="image-20220404163616187" style="zoom:80%;"><p>要注意，这里的Q，K，V都是一样的东西，与其他注意力不同的在于它除了个维度的根号来增强稳定性。</p><ul><li><strong>Multi-Head Attention</strong></li></ul><img src="/2022/05/04/Attention-is-all-you-need/image-20220404163928961.png" alt="image-20220404163928961" style="zoom: 60%;"><p>这里的细节就是遗忘的地方了，可以看出来，为了使计算力与整体计算相同，每个head都将特征降维到了除以head个数的维度。</p><ul><li><strong>Position-wise Feed-Forward Networks</strong></li></ul><p>除了注意子层之外，我们的编码器和解码器中的每一层都包含一个完全连接的前馈网络，这个前馈网络被单独和同样地应用到每个位置。这包括两个线性转换，中间有一个 ReLU 激活。</p><img src="/2022/05/04/Attention-is-all-you-need/image-20220404164349151.png" alt="image-20220404164349151" style="zoom:80%;"><img src="/2022/05/04/Attention-is-all-you-need/image-20220404164323899.png" alt="image-20220404164323899" style="zoom:50%;">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Attention-Is-All-You-Need&quot;&gt;&lt;a href=&quot;#Attention-Is-All-You-Need&quot; class=&quot;headerlink&quot; title=&quot;Attention Is All You Need&quot;&gt;&lt;/a&gt;Attention I</summary>
+      
+    
+    
+    
+    <category term="Computer Vision" scheme="https://alanliangc.github.io/categories/Computer-Vision/"/>
+    
+    
+    <category term="Transformer,Attention" scheme="https://alanliangc.github.io/tags/Transformer-Attention/"/>
+    
+  </entry>
   
   <entry>
     <title>MAE</title>
