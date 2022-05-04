@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://alanliangc.github.io/2022/05/04/MAE/</loc>
+    
+    <lastmod>2022-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/2022/03/23/PointNet/</loc>
+    
+    <lastmod>2022-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://alanliangc.github.io/2022/03/23/helios/</loc>
     
     <lastmod>2022-03-23</lastmod>
@@ -21,15 +39,6 @@
   
   <url>
     <loc>https://alanliangc.github.io/2022/03/23/PointNet-plus/</loc>
-    
-    <lastmod>2022-03-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://alanliangc.github.io/2022/03/23/PointNet/</loc>
     
     <lastmod>2022-03-23</lastmod>
     
@@ -76,7 +85,7 @@
 
   <url>
     <loc>https://alanliangc.github.io/</loc>
-    <lastmod>2022-03-23</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,42 +93,49 @@
   
   <url>
     <loc>https://alanliangc.github.io/tags/FFT-IFFT/</loc>
-    <lastmod>2022-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://alanliangc.github.io/tags/DNN-Pointcloud/</loc>
-    <lastmod>2022-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://alanliangc.github.io/tags/Image-Process/</loc>
-    <lastmod>2022-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://alanliangc.github.io/tags/Morphology/</loc>
-    <lastmod>2022-03-23</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/tags/Image-denoise/</loc>
-    <lastmod>2022-03-23</lastmod>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/tags/Morphology/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/tags/Image-Process/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/tags/Transformer-Attention/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/tags/DNN-Pointcloud/</loc>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/tags/Simulation/</loc>
-    <lastmod>2022-03-23</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -128,21 +144,28 @@
   
   <url>
     <loc>https://alanliangc.github.io/categories/Image-Process/</loc>
-    <lastmod>2022-03-23</lastmod>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/categories/Computer-Vision/</loc>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/categories/3D-object-detect/</loc>
-    <lastmod>2022-03-23</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/categories/Helios/</loc>
-    <lastmod>2022-03-23</lastmod>
+    <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
