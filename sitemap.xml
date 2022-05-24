@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://alanliangc.github.io/2022/05/24/Unsupervised%20Point%20Cloud%20Pre-training%20via%20Occlusion%20Completion/</loc>
+    
+    <lastmod>2022-05-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://alanliangc.github.io/2022/05/23/CVPR2022-CrossPoint%20Self-Supervised%20Cross-Modal%20Contrastive%20Learning/</loc>
     
     <lastmod>2022-05-24</lastmod>
@@ -194,14 +203,14 @@
   </url>
   
   <url>
-    <loc>https://alanliangc.github.io/tags/Image-denoise/</loc>
+    <loc>https://alanliangc.github.io/tags/Morphology/</loc>
     <lastmod>2022-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://alanliangc.github.io/tags/Morphology/</loc>
+    <loc>https://alanliangc.github.io/tags/Image-denoise/</loc>
     <lastmod>2022-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -239,6 +248,13 @@
   
   <url>
     <loc>https://alanliangc.github.io/categories/Image-Process/</loc>
+    <lastmod>2022-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/categories/Unsupervised/</loc>
     <lastmod>2022-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
