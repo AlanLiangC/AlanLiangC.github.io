@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://alanliangc.github.io/2022/06/14/CVPR2022-Segment%20and%20Complete/</loc>
+    
+    <lastmod>2022-06-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://alanliangc.github.io/2022/05/30/ICLR-2021-RobustPointSet/</loc>
     
     <lastmod>2022-05-30</lastmod>
@@ -193,7 +202,7 @@
 
   <url>
     <loc>https://alanliangc.github.io/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -201,49 +210,56 @@
   
   <url>
     <loc>https://alanliangc.github.io/tags/DNN-Pointcloud/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/tags/Transformer-Attention/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/tags/DNN-Adversarial/</loc>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/tags/FFT-IFFT/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/tags/Image-denoise/</loc>
-    <lastmod>2022-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://alanliangc.github.io/tags/Morphology/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/tags/Image-Process/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/tags/Morphology/</loc>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/tags/Simulation/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -252,35 +268,42 @@
   
   <url>
     <loc>https://alanliangc.github.io/categories/3D-object-detect/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/categories/Computer-Vision/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/categories/object-detect/</loc>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/categories/Image-Process/</loc>
-    <lastmod>2022-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://alanliangc.github.io/categories/Unsupervised/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://alanliangc.github.io/categories/Helios/</loc>
-    <lastmod>2022-05-30</lastmod>
+    <lastmod>2022-06-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://alanliangc.github.io/categories/Unsupervised/</loc>
+    <lastmod>2022-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
