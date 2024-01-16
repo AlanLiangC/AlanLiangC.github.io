@@ -21,43 +21,75 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.12*: &nbsp;We have published a preprint paper and it will be sent for peer review.
+- *2023.08*: &nbsp;🎉🎉 One paper is accepted by [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) (IF 8.0). 
 
-# 📝 Publications 
+# 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EAAI</div><img src='images/papers/workflow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[SPSNet: Boosting 3D point-based object detectors with stable point sampling](http://dx.doi.org/10.1016/j.engappai.2023.106807)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+*Engineering Applications of Artificial Intelligence*
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+**Alan Liang**, Hao Zhang, Wenyu Chen, Haiyang Hua
 
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Project**](https://github.com/AlanLiangC/SPSNet) 
+
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE Access</div><img src='images/papers/access.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[To Drop or to Select: Reduce the Negative Effects of Disturbance Features for Point Cloud Classification From an Interpretable Perspective](http://dx.doi.org/10.1109/ACCESS.2023.3266340)
+
+*IEEE Access*
+
+**Alan Liang**, Hao Zhang, Wenyu Chen, Haiyang Hua
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">OPE</div><img src='images/papers/diedai.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Saliency maps for point cloud recognition models](http://dx.doi.org/10.37188/OPE.20233108.1188)
+
+*Optics and Precision Engineering*
+
+**Alan Liang**, Hao Zhang, Haiyang Hua
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCRIS 2022</div><img src='images/papers/saliency_map.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Point Cloud Saliency Maps Based on Non-Contribution Factors](http://dx.doi.org/10.1145/3562007.3562045)
+
+*2022 3rd International Conference on Control, Robotics and Intelligent System*
+
+**Alan Liang**, Hao Zhang, Haiyang Hua
+
+</div>
+</div>
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2022.09* Chinese Academy of Sciences Scholarship for Academic Achievement
+- *2021.06* Outstanding Graduate of Fuzhou University
+- *2021.03* New Oriental Scholarship
+- *2018.08* Robotics Workshop in University of Florida, “Best Individual” Award
+- *2017.09-2020.09* Continuous six-time first prize scholarship
+- *2017.09* Fuzhou University Freshman Scholarship
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2021.06 - now*,  Ph.D. and master's degree dual-track program in Pattern Recognition and Intelligent Systems at the Shenyang Institute of Automation, Chinese Academy of Sciences.
+- *2017.09 - 2021.06*, Studying for a double degree in Robotics Engineering and Artificial Intelligence at the College of Mechanical Engineering and Automation, Fuzhou University.
+- *2014.09 - 2017.06*, Xiangyang No.4 Middle School in Hubei Province.
 
 # 💻 Internships
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AUTOWISE</div><img src='images/autowise/logo_autowise.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-
-- *2022.12 - 2023.05*, Autowise [](https://autowise.ai/zh-hans/company/), Hangzhou, Zhejiang, China.
+*2022.12 - 2023.05*,  [**Autowise**](https://autowise.ai/zh-hans/company/), Hangzhou, Zhejiang, China.
 
 I have worked as a perception algorithm engineer intern at ***Autowise*** (Shanghai Xiantu Intelligent Technology Co., Ltd.) for five months, mainly responsible for the development and deployment of multitask models.
