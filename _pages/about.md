@@ -81,7 +81,7 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 - *2017.09* Fuzhou University Freshman Scholarship
 
 # 📖 Educations
-- *2021.06 - now*,  Ph.D. and master's degree dual-track program in Pattern Recognition and Intelligent Systems at the Shenyang Institute of Automation, Chinese Academy of Sciences.
+- *2021.06 - now*,  A successive postgraduate and doctoral program in Pattern Recognition and Intelligent Systems at the Shenyang Institute of Automation, Chinese Academy of Sciences.
 - *2017.09 - 2021.06*, Studying for a double degree in Robotics Engineering and Artificial Intelligence at the College of Mechanical Engineering and Automation, Fuzhou University.
 - *2014.09 - 2017.06*, Xiangyang No.4 Middle School in Hubei Province.
 
