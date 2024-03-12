@@ -21,7 +21,8 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 
 
 # 🔥 News
-- *2023.12*: &nbsp;We have published a preprint paper and it will be sent for peer review.
+- *2024.03*: &nbsp;We have published a preprint paper "Boosting 3D Point-based Object Detection by Reducing Information Loss Caused by Discontinuous Receptive Fields" and it will be sent for peer review.
+- *2023.12*: &nbsp;We have published a preprint paper "PDM-SSD: Single-Stage 3D Object Detector With Point Dilation Mechanism" and it will be sent for peer review.
 - *2023.08*: &nbsp;🎉🎉 One paper is accepted by [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) (IF 8.0). 
 
 # 📝 Publications
