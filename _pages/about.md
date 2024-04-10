@@ -19,8 +19,10 @@ redirect_from:
 
 I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursuing a PhD at the Shenyang Institute of Automation, Chinese Academy of Sciences. My research interests lie in the fascinating aspects of 3D perception, 3D object detection, and everything related to autonomous driving.
 
-
 # 🔥 News
+
+- *2024.04*: &nbsp;We have published a preprint paper "SGCCNet: Single-Stage 3D Object Detector With Saliency-Guided Data Augmentation and Confidence Correction Mechanism" and it will be sent for peer review.
+
 - *2024.03*: &nbsp;We have published a preprint paper "Boosting 3D Point-based Object Detection by Reducing Information Loss Caused by Discontinuous Receptive Fields" and it will be sent for peer review.
 - *2023.12*: &nbsp;We have published a preprint paper "PDM-SSD: Single-Stage 3D Object Detector With Point Dilation Mechanism" and it will be sent for peer review.
 - *2023.08*: &nbsp;🎉🎉 One paper is accepted by [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) (IF 8.0). 
