@@ -21,10 +21,12 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 
 # 🔥 News
 
+- *2024.06*: &nbsp;We have published a preprint paper "SuPrNet: Super Proxy for 4D Occupancy Forecasting" and it will be sent for peer review. [**Project**](https://github.com/AlanLiangC/4DPCF) 
+
 - *2024.04*: &nbsp;We have published a preprint paper "SGCCNet: Single-Stage 3D Object Detector With Saliency-Guided Data Augmentation and Confidence Correction Mechanism" and it will be sent for peer review.
 
-- *2024.03*: &nbsp;We have published a preprint paper "Boosting 3D Point-based Object Detection by Reducing Information Loss Caused by Discontinuous Receptive Fields" and it will be sent for peer review.
-- *2023.12*: &nbsp;We have published a preprint paper "PDM-SSD: Single-Stage 3D Object Detector With Point Dilation Mechanism" and it will be sent for peer review.
+- *2024.03*: &nbsp;We have published a preprint paper "Boosting 3D Point-based Object Detection by Reducing Information Loss Caused by Discontinuous Receptive Fields" and it will be sent for peer review. [**Project**](https://github.com/AlanLiangC/DRF-SSD) 
+- *2023.12*: &nbsp;We have published a preprint paper "PDM-SSD: Single-Stage 3D Object Detector With Point Dilation Mechanism" and it will be sent for peer review. [**Project**](https://github.com/AlanLiangC/PDM-SSD) 
 - *2023.08*: &nbsp;🎉🎉 One paper is accepted by [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) (IF 8.0). 
 
 # 📝 Publications
@@ -76,6 +78,7 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 </div>
 
 # 🎖 Honors and Awards
+- *2024.05* Merit Student Award of Chinese Academy of Sciences
 - *2022.09* Chinese Academy of Sciences Scholarship for Academic Achievement
 - *2021.06* Outstanding Graduate of Fuzhou University
 - *2021.03* New Oriental Scholarship
