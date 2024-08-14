@@ -21,17 +21,30 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 
 # 🔥 News
 
+- *2024.08*: &nbsp;🎉🎉 One paper is accepted by [Knowledge-Based Systems](https://www.sciencedirect.com/journal/knowledge-based-systems) (IF 7.2, CAS ranking Q1 Top). 
 - *2024.07*: &nbsp;🎉🎉 One paper is accepted by [International Journal of Applied Earth Observation and Geoinformation](https://www.sciencedirect.com/journal/international-journal-of-applied-earth-observation-and-geoinformation) (IF 7.6, CAS ranking Q1 Top). 
-- *2024.06*: &nbsp;We have published a preprint paper "SuPrNet: Super Proxy for 4D Occupancy Forecasting" and it will be sent for peer review. [**Project**](https://github.com/AlanLiangC/4DPCF) 
 - *2024.04*: &nbsp;We have published a preprint paper "SGCCNet: Single-Stage 3D Object Detector With Saliency-Guided Data Augmentation and Confidence Correction Mechanism" and it will be sent for peer review.
 - *2023.12*: &nbsp;We have published a preprint paper "PDM-SSD: Single-Stage 3D Object Detector With Point Dilation Mechanism" and it will be sent for peer review. [**Project**](https://github.com/AlanLiangC/PDM-SSD) 
 - *2023.08*: &nbsp;🎉🎉 One paper is accepted by [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) (IF 8.0, CAS ranking Q2 Top). 
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JAG</div><img src='images/papers/DRFSSD.svg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KBS</div><img src='images/papers/nusc_occ_res.svg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Boosting 3D Point-based Object Detection by Reducing Information Loss Caused by Discontinuous Receptive Fields](AlanLiangC@github.io)
+[SuPrNet: Super Proxy for 4D occupancy forecasting](https://www.sciencedirect.com/science/article/pii/S0950705124009663)
+
+*Knowledge-Based Systems*
+
+**Alan Liang**, Wenyu Chen, Jian Fang and Hiaoci Zhao
+
+[**Project**](https://github.com/AlanLiangC/4DPCF) 
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JAG</div><img src='images/papers/HT.svg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Boosting 3D Point-based Object Detection by Reducing Information Loss Caused by Discontinuous Receptive Fields](https://www.sciencedirect.com/science/article/pii/S1569843224004035)
 
 *International Journal of Applied Earth Observation and Geoinformation*
 
@@ -45,6 +58,7 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EAAI</div><img src='images/papers/workflow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SPSNet: Boosting 3D point-based object detectors with stable point sampling](http://dx.doi.org/10.1016/j.engappai.2023.106807)
+
 *Engineering Applications of Artificial Intelligence*
 
 **Alan Liang**, Hao Zhang, Wenyu Chen, Haiyang Hua
@@ -57,7 +71,6 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE Access</div><img src='images/papers/access.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [To Drop or to Select: Reduce the Negative Effects of Disturbance Features for Point Cloud Classification From an Interpretable Perspective](http://dx.doi.org/10.1109/ACCESS.2023.3266340)
-
 *IEEE Access*
 
 **Alan Liang**, Hao Zhang, Wenyu Chen, Haiyang Hua
@@ -89,7 +102,7 @@ I'm Alan Liang (Liang Ao), from Xiangyang, Hubei province. Currently, I am pursu
 
 # 🎖 Honors and Awards
 
-- *2024.07* CSC National Scholarship Award for Scholarly Exchange
+- *2024.07* CSC State Scholarship Award for Scholarly Exchange
 
 - *2024.05* Merit Student Award of Chinese Academy of Sciences
 - *2022.09* Chinese Academy of Sciences Scholarship for Academic Achievement
