@@ -1,15 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirect Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alan Liang — Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif; text-align: center; font-size: 24px;">
-  <p>This site has moved to <a href="https://alanliang.vercel.app/" target="_blank" rel="noopener noreferrer">https://alanliang.vercel.app/</a>.
-  <br />
-  <br />
-  I'm sorry that as <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a> has suspended service in China, you may need a VPN to access this link.
-  </p>
+<body>
+  <!-- ===== NAV ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>Alan Liang</h1>
+      </div>
+      <div class="links">
+        <a class="hide-sm" href="#about">About</a>
+        <a class="hide-sm" href="#news">News</a>
+        <a class="hide-sm" href="#publications">Publications</a>
+        <a class="cta" href="https://github.com/AlanLiangC" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <canvas id="stars" class="starfield"></canvas>
+    <div class="hero-inner hero-2col">
+      <!-- Left: Profile / Avatar -->
+      <aside class="profile">
+        <div class="avatar-wrap">
+          <img src="public/images/AL.jpg" alt="Alan Liang" class="avatar"/>
+          <div class="avatar-glow" aria-hidden="true"></div>
+        </div>
+        <div class="profile-meta">
+          <h2 class="name">Alan Liang</h2>
+        </div>
+      </aside>
+  
+      <!-- Right: About Card -->
+      <div class="panel about" id="about">
+        <h3 class="about-title">About</h3>
+        <div id="aboutRich"></div>
+        <p class="interest" id="interestText"></p>
+        <div class="badge-row">
+          <span class="badge">3D/4D Perception</span>
+          <span class="badge">3D/4D Generation</span>
+          <span class="badge">World Modeling</span>
+          <span class="badge">Multimodal Large Model</span>
+        </div>
+        <div class="mono" id="contactLine">✉️</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== DETAILS & ACKNOWLEDGMENTS ===== -->
+  <section id="details">
+    <!-- <h3 class="section-title">Details & Acknowledgments</h3> -->
+    <div class="panel ack-panel" id="ackPanel"></div>
+  </section>
+
+
+  <!-- ===== NEWS ===== -->
+  <section id="news">
+    <h3 class="section-title">News</h3>
+    <div class="timeline" id="newsList"></div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications">
+    <h3 class="section-title">Selected Publications</h3>
+    <div class="pub-grid" id="pubGrid"></div>
+  </section>
+
+  <footer>
+    <div class="foot-inner">
+      <div class="copyright" id="copy"></div>
+      <div class="social" id="socialIcons"></div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/stars.js"></script>
 </body>
 </html>

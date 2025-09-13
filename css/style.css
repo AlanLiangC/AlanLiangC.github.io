@@ -1,0 +1,206 @@
+
+:root{
+    --bg:#0b0e13;           /* base */
+    --bg-2:#0f1420;         /* elevated */
+    --fg:#d8e1ff;           /* text */
+    --muted:#8aa0c7;        /* muted text */
+    --brand:#6ee7ff;        /* cyan accent */
+    --brand-2:#a78bfa;      /* violet accent */
+    --card:#111827cc;       /* glass */
+    --border:rgba(110,231,255,.18);
+    --ring:rgba(167,139,250,.35);
+    --shadow:0 10px 30px rgba(0,0,0,.55);
+    --radius:18px;
+    --radius-sm:14px;
+    --max:1200px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0; background:radial-gradient(1200px 600px at 10% -10%, #101625 0%, transparent 60%),
+            radial-gradient(1000px 700px at 120% 10%, #1a1030 0%, transparent 55%),
+            var(--bg);
+    color:var(--fg); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    line-height:1.6; overflow-x:hidden;
+}
+a{color:var(--brand); text-decoration:none}
+a:hover{color:#b9f1ff}
+
+/* ===== Top nav ===== */
+.nav {
+    position:sticky; top:0; z-index:40; backdrop-filter: blur(12px);
+    background:linear-gradient(180deg, rgba(15,17,24,0.85), rgba(15,17,24,0.35));
+    border-bottom:1px solid rgba(110,231,255,.08);
+}
+.nav-inner{max-width:var(--max); margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:14px 20px}
+.brand{display:flex; align-items:center; gap:12px}
+.logo{
+    width:36px; height:36px; border-radius:50%;
+    background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2), #14b8a6, var(--brand));
+    box-shadow:0 0 25px rgba(110,231,255,.35), inset 0 0 18px rgba(167,139,250,.35);
+}
+.brand h1{font-size:18px; letter-spacing:.6px; margin:0; font-weight:700}
+.nav a{font-size:14px; color:var(--fg); opacity:.9}
+.links{display:flex; gap:16px; align-items:center}
+.cta{padding:8px 14px; border-radius:999px; background:linear-gradient(90deg,var(--brand-2),var(--brand)); color:#071019; font-weight:700}
+
+/* ===== Hero ===== */
+.hero{position:relative; overflow:hidden}
+.starfield{position:absolute; inset:0; z-index:-1}
+.hero-inner{max-width:var(--max); margin:0 auto; padding:80px 20px 40px; display:grid; grid-template-columns:1.2fr .8fr; gap:40px}
+.title {font-size:40px; line-height:1.15; margin:0 0 8px; font-weight:800}
+.subtitle{color:var(--muted); font-size:18px}
+.badge-row{display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 28px}
+.badge{
+    border:1px solid var(--border); border-radius:999px; padding:6px 10px; font-size:12px;
+    background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+}
+.panel{
+    background:linear-gradient(180deg, rgba(17,24,39,.85), rgba(11,16,28,.65));
+    border-radius:var(--radius); border:1px solid var(--border); box-shadow:var(--shadow);
+    padding:20px; position:relative; overflow:hidden
+}
+.panel:before{
+    content:""; position:absolute; inset:-2px; border-radius:calc(var(--radius) + 2px);
+    padding:1px; background:linear-gradient(135deg, rgba(167,139,250,.35), rgba(110,231,255,.2)); -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude; pointer-events:none
+}
+
+.about p{margin:.35rem 0}
+.mono{font-family:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:13px; color:#a5b4fc}
+
+/* ===== Section ===== */
+section{max-width:var(--max); margin:0 auto; padding:36px 20px}
+.section-title{font-size:22px; font-weight:800; letter-spacing:.4px; margin:0 0 18px}
+
+/* ===== Publications grid ===== */
+.pub-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px}
+.card{position:relative; border-radius:var(--radius-sm); border:1px solid var(--border); background:linear-gradient(180deg, rgba(17,24,39,.8), rgba(17,24,39,.6)); overflow:hidden; box-shadow:var(--shadow)}
+/* .card img{display:block; width:100%; aspect-ratio:16/9; object-fit:cover; filter:saturate(1.05) contrast(1.05)} */
+.card img {
+    display: block;
+    width: 100%;
+    height: 160px;    /* 统一高度，例如 160px，可调 */
+    object-fit: fill; /* 拉伸填满，可能会变形 */
+  }
+  
+  
+  
+.card .body{padding:14px 14px 16px}
+.card .title{font-size:15px; font-weight:700; margin:0 0 6px}
+.card .meta{font-size:12px; color:var(--muted); margin:0 0 12px}
+.chip-row{display:flex; gap:8px; flex-wrap:wrap}
+.chip{font-size:12px; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.04)}
+.chip:hover{border-color:rgba(255,255,255,.2)}
+
+/* ===== Timeline ===== */
+.timeline{display:grid; gap:10px}
+.tl-item{border-left:2px solid var(--ring); padding:10px 12px; background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01)); border-radius:10px}
+.tl-item time{font-size:12px; color:var(--muted); margin-right:8px}
+
+/* ===== Footer ===== */
+footer{border-top:1px solid rgba(110,231,255,.08); padding:28px 20px; margin-top:24px; color:var(--muted)}
+.foot-inner{max-width:var(--max); margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px}
+.social{display:flex; gap:14px}
+.icon{width:20px; height:20px; opacity:.9}
+.copyright{font-size:13px}
+
+/* ===== Responsive ===== */
+@media (max-width:1100px){.pub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:720px){
+    .hero-inner{grid-template-columns:1fr; gap:22px; padding-top:56px}
+    .pub-grid{grid-template-columns:1fr}
+    .brand h1{display:none}
+    .links .hide-sm{display:none}
+}
+
+
+/* === HERO 两列布局 === */
+.hero-2col {
+    display: grid;
+    grid-template-columns: auto 1fr; /* 左自适应, 右填满 */
+    gap: 36px;
+    padding: 80px 20px 40px;
+    align-items: start; /* 顶格对齐 */
+  }
+  
+  /* === Profile (左侧头像卡片) === */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    background: transparent;   /* 没有卡片背景 */
+    border: none;              /* 去掉边框 */
+    box-shadow: none;          /* 去掉阴影 */
+  }
+  
+  .avatar-wrap {
+    position: relative;
+    width: 250px;   /* 头像大小可以调 */
+    height: 250px;
+    border-radius: 50%;
+    padding: 3px;
+    background: conic-gradient(from 180deg, var(--brand), var(--brand-2), #14b8a6, var(--brand));
+    box-shadow: 0 0 25px rgba(110,231,255,.25), inset 0 0 15px rgba(167,139,250,.25);
+  }
+  .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    background: #0b0e13;
+  }
+  .avatar-glow {
+    position: absolute;
+    inset: -10%;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(110,231,255,.1), transparent 70%);
+    z-index: -1;
+  }
+  
+  .profile-meta {
+    margin-top: 16px;
+  }
+  .name {
+    margin: 6px 0 2px;
+    font-size: 32;
+    font-weight: 800;
+  }
+  .tagline {
+    opacity: .9;
+  }
+  
+  /* === About 卡片内部 === */
+  .about-title { margin: 0 0 10px; font-weight: 800; letter-spacing: .3px; }
+  #aboutRich p { margin: .35rem 0; }
+  #aboutRich a { text-decoration: none; border-bottom: 1px dashed rgba(110,231,255,.35); padding-bottom: 1px; }
+  #aboutRich a:hover { border-bottom-color: rgba(110,231,255,.7); }
+  
+  /* 兴趣（研究方向） */
+  .interest {
+    color: var(--muted);
+    margin: 10px 0 16px;
+  }
+  
+/* 替换原来的 .ack-panel a img.inline-icon {...} 为下面这一段 */
+.inline-icon {
+    display: inline-block;      /* 保持内联盒，方便控制尺寸 */
+    width: 15px;                /* 或 1em */
+    height: auto;               /* 等比缩放 */
+    vertical-align: text-bottom;/* 和文字底部对齐 */
+    margin-left: 3px;           /* 和前面文字留点空隙 */
+    margin-right: 1px;
+    opacity: 0.9;
+  }
+  
+  
+  /* 响应式 */
+  @media (max-width: 900px) {
+    .hero-2col { grid-template-columns: 1fr; gap: 22px; padding-top: 56px; }
+    .profile { order: -1; }
+    .avatar-wrap { width: 180px; height: 180px; }
+  }
+  
