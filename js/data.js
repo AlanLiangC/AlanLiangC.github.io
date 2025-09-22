@@ -54,13 +54,15 @@ const personalInfo = {
     }
 
 const newsItems = [
+    { date:"[08/2025]", html:`Our papers <a href="https://arxiv.org/abs/2507.17664" target="_blank" rel="noopener"><strong><u>"Talk2Event"</u></strong></a>, <a href="https://arxiv.org/abs/2506.13558" target="_blank" rel="noopener"><strong><u>"X-Scene"</u></strong></a> and <a href="https://project-3eed.github.io/" target="_blank" rel="noopener"><strong><u>"3EED"</u></strong></a> are accepted by <a href="https://neurips.cc/Conferences/2025/CallForPapers" target="_blank" rel="noopener"><strong><u>NeurlPS 2025</u></strong></a>.`},
     { date:"[06/2025]", html:`<strong>Track 5: Cross-Platform 3D Object Detection</strong> of the <a href="https://robosense2025.github.io/" target="_blank" rel="noopener"><strong><u>RoboSense Challenge</u></strong></a> at <a href="https://www.iros25.org/" target="_blank" rel="noopener"><strong><u>IROS 2025</u></strong></a> is now live! See the <a href="https://robosense2025.github.io/track5" target="_blank" rel="noopener"><strong><u>track homepage</u></strong></a>, <a href="https://github.com/robosense2025/track5" target="_blank" rel="noopener"><strong><u>GitHub repo</u></strong></a>. Contact: <a href="mailto:robosense2025@gmail.com"><strong><u>robosense2025@gmail.com</u></strong></a> or my <a href="https://alanliang.vercel.app/" target="_blank" rel="noopener"><strong><u>personal page</u></strong></a>.` },
-    { date:"[06/2025]", html:`We are hosting the <a href="https://robosense2025.github.io/" target="_blank" rel="noopener"><strong><u>RoboSense Challenge</u></strong></a> at <a href="https://www.iros25.org/" target="_blank" rel="noopener"><strong><u>IROS 2025</u></strong></a>.`}
-    ];
+    { date:"[06/2025]", html:`We are hosting the <a href="https://robosense2025.github.io/" target="_blank" rel="noopener"><strong><u>RoboSense Challenge</u></strong></a> at <a href="https://www.iros25.org/" target="_blank" rel="noopener"><strong><u>IROS 2025</u></strong></a>.`},
+    { date:"[05/2025]", html:`Our paper <a href="https://arxiv.org/abs/2507.17665" target="_blank" rel="noopener"><strong><u>"Perspective-Invariant 3D Object Detection"</u></strong></a> is accepted by <a href="https://iccv.thecvf.com/" target="_blank" rel="noopener"><strong><u>ICCV 2025</u></strong></a>.`},
+  ];
 
 const publications = [
     {
-        id: 14,
+        id: 16,
         image: "public/images/publications/lidarcrafter.png",
         title: "LiDARCrafter: Dynamic 4D World Modeling from LiDAR Sequences",
         author: "Alan Liang, Youquan Liu, Yu Yang, Dongyue Lu, Linfeng Li, Lingdong Kong‡, et al.",
@@ -71,7 +73,7 @@ const publications = [
                 {name:"project", url:"https://lidarcrafter.github.io/"}]
     },
     {
-        id: 13,
+        id: 15,
         image: "public/images/publications/la-la-lidar.png",
         title: "La La LiDAR: Large-Scale Layout Generation from LiDAR Data",
         author: "Youquan Liu, Lingdong Kong, Weidong Yang, Xin Li, Alan Liang, et al.",
@@ -82,7 +84,18 @@ const publications = [
                 {name:"project", url:""}]
     },
     {
-        id: 12,
+      id: 14,
+      image: "public/images/publications/wild3D_workshop.png",
+      title: "Learning to Generate 4D LiDAR Sequences",
+      author: "Ao Liang, Youquan Liu, Yu Yang, Dongyue Lu, Linfeng Li, Lingdong Kong, Huaici Zhao, Wei Tsang Ooi",
+      conference: "ICCV 2025 Wild3D Workshop",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2509.11959"},
+              {name:"code",url:""},
+              {name:"project", url:""}]
+  },
+    {
+        id: 13,
         image: "public/images/publications/veila.png",
         title: "Veila: Scaling Diffusion Models for Panoramic LiDAR Point Cloud Generation from a Single Image",
         author: "Youquan Liu, Lingdong Kong, Weidong Yang, Alan Liang, Jianxiong Gao, et al.",
@@ -93,7 +106,7 @@ const publications = [
                 {name:"project", url:""}]
     },
     {
-        id: 11,
+        id: 12,
         image: "public/images/publications/worldbench_survey.webp",
         title: "3D and 4D World Modeling: A Survey",
         author: "Lingdong Kong*, Wesley Yang*, Jianbiao Mei*, Youquan Liu*, Alan Liang*, Dekai Zhu*, Dongyue Lu*, Wei Yin*, et al.",
@@ -104,7 +117,7 @@ const publications = [
                 {name:"project", url:"https://worldbench.github.io/survey"}]
     },
     {
-        id: 10,
+        id: 11,
         image: "public/images/publications/see4d.png",
         title: "See4D: Pose-Free 4D Generation via Auto-Regressive Video Inpainting",
         author: "Dongyue Lu*, Alan Liang*, Tianxin Huang, Xiao Fu, Yuyang Zhao, Baorui Ma, Lingdong Kong‡, Ziwei Liu",
@@ -114,19 +127,30 @@ const publications = [
                 {name:"code",url:""},
                 {name:"project", url:"https://see-4d.github.io/"}]
     },
+    {
+      id: 10,
+      image: "public/images/publications/talk2event_workshp.png",
+      title: "Visual Grounding from Event Cameras",
+      author: "Lingdong Kong*, Dongyue Lu*, Ao Liang*, Rong Li, Yuhao Dong, Tianshuai Hu, Lai Xing Ng, Wei Tsang Ooi, Benoit R. Cottereau",
+      conference: "ICCV 2025 NeVi Workshop",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2509.09584"},
+              {name:"code",url:""},
+              {name:"project", url:""}]
+  },
     { 
         id:9, 
         image:"public/images/publications/xscene.png", 
         author:"Yu Yang, Alan Liang, Jianbiao Mei, Yukai Ma, Yong Liu, Gim Hee Lee", 
         title:"𝒳-Scene: Large-Scale Driving Scene Generation with High Fidelity and Flexible Controllability", 
-        conference:"Arxiv 2025", 
+        conference:"NeurlPS 2025 (Poster)", 
         details:"", 
-        links:[{name:"pdf",url:""},
+        links:[{name:"pdf",url:"https://arxiv.org/abs/2506.13558"},
                 {name:"code",url:"https://x-scene.github.io/"},
                 {name:"project",url:"https://x-scene.github.io/"}]
     },
-    { id:8, image:"public/images/publications/talk2event.png", author:"Lingdong Kong*, Dongyue Lu*, Alan Liang*, Rong Li, Yuhao Dong, Tianshuai Hu, Lai Xing Ng, Wei Tsang Ooi, Benoit R. Cottereau", title:"Talk2Event: Grounded Understanding of Dynamic Scenes from Event Cameras", conference:"Arxiv 2025", details:"", links:[{name:"pdf",url:""},{name:"code",url:""},{name:"project",url:"https://talk2event.github.io/"}]},
-    { id:7, image:"public/images/publications/3eed.jpg", author:"Rong Li*, Yuhao Dong*, Tianshuai Hu*, Alan Liang*, Youquan Liu*, Dongyue Lu*, Liang Pan, Lingdong Kong‡, Junwei Liang, Ziwei Liu", title:"3EED: Ground Everything Everywhere in 3D", conference:"Arxiv 2025", details:"", links:[{name:"pdf",url:""},{name:"code",url:"https://rongli.tech/"},{name:"project",url:"https://project-3eed.github.io/"}]},
+    { id:8, image:"public/images/publications/talk2event.png", author:"Lingdong Kong*, Dongyue Lu*, Alan Liang*, Rong Li, Yuhao Dong, Tianshuai Hu, Lai Xing Ng, Wei Tsang Ooi, Benoit R. Cottereau", title:"Talk2Event: Grounded Understanding of Dynamic Scenes from Event Cameras", conference:"NeurlPS 2025 (Spotlight)", details:"", links:[{name:"pdf",url:"https://arxiv.org/abs/2507.17664"},{name:"code",url:""},{name:"project",url:"https://talk2event.github.io/"}]},
+    { id:7, image:"public/images/publications/3eed.jpg", author:"Rong Li*, Yuhao Dong*, Tianshuai Hu*, Alan Liang*, Youquan Liu*, Dongyue Lu*, Liang Pan, Lingdong Kong‡, Junwei Liang, Ziwei Liu", title:"3EED: Ground Everything Everywhere in 3D", conference:"NeurlPS 2025 DB Track (Poster)", details:"", links:[{name:"pdf",url:""},{name:"code",url:"https://rongli.tech/"},{name:"project",url:"https://project-3eed.github.io/"}]},
     {   id:6, 
         image:"public/images/publications/pi3det.jpg", 
         author:"Alan Liang*, Lingdong Kong*, Dongyue Lu*, Youquan Liu, Jian Fang, Huaici Zhao, Wei Tsang Ooi", 
