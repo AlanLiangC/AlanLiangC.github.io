@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Happy Birthday ❤️</title>
+<style>
+    /* -------------- 基础样式 -------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+    :root {
+        --bg-color: radial-gradient(circle at 20% 20%, #2b2b40 0%, #0a0a12 70%);
+        --pink: #ff6ec7;
+        --gold: #ffd27d;
+        --cream: #fff4e6;
+        --choco: #3a1c16;
+        --shadow: 0 30px 80px rgba(0,0,0,0.7);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;}
+
+    body {
+        min-height:100vh;
+        background: var(--bg-color);
+        color:#fff;
+        font-family:'Poppins',system-ui,-apple-system, BlinkMacSystemFont, "PingFang SC","Microsoft YaHei", sans-serif;
+        overflow:hidden;
+        position:relative;
+    }
+
+    /* -------------- 闪烁星星背景 -------------- */
+    .stars {
+        position:fixed;
+        inset:0;
+        pointer-events:none;
+        background-image:
+            radial-gradient(circle,#ffffff88 0 1px,transparent 2px),
+            radial-gradient(circle,#ffffff44 0 1px,transparent 2px),
+            radial-gradient(circle,#ffffff22 0 1px,transparent 2px);
+        background-size:200px 200px,300px 300px,400px 400px;
+        background-position:0 0, 40px 80px,120px 200px;
+        animation: twinkle 8s linear infinite;
+        filter:blur(0.5px);
+    }
+    @keyframes twinkle {
+        0% {opacity:0.6; background-position:0 0, 40px 80px,120px 200px;}
+        50%{opacity:1; background-position:50px 60px, 0px 120px,200px 80px;}
+        100%{opacity:0.6; background-position:0 0, 40px 80px,120px 200px;}
+    }
+
+    /* -------------- 布局容器 -------------- */
+    .container {
+        position:relative;
+        width:100%;
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        padding:2rem 1rem 7rem;
+    }
+
+    /* -------------- 霓虹标题 -------------- */
+    .title {
+        font-family:'Pacifico', cursive;
+        font-size: clamp(1.8rem, 1rem + 2vw, 2.8rem);
+        line-height:1.2;
+        color: var(--pink);
+        text-shadow:0 0 8px var(--pink),0 0 20px var(--pink),0 0 40px #ff0095;
+        margin-bottom:1rem;
+        letter-spacing:0.05em;
+        white-space:nowrap;
+    }
+
+    .typing {
+        display:inline-block;
+        border-right:2px solid var(--pink);
+        white-space:nowrap;
+        overflow:hidden;
+        min-height:1.2em;
+        animation: caretBlink 0.8s steps(1) infinite;
+        font-weight:600;
+    }
+    @keyframes caretBlink {
+        0%,100% {border-color:transparent;}
+        50% {border-color:var(--pink);}
+    }
+
+    /* -------------- 生日蛋糕 -------------- */
+    .cake-wrapper{
+        position:relative;
+        perspective:800px;
+        margin-bottom:2rem;
+        filter:drop-shadow(0 30px 50px rgba(0,0,0,0.8));
+        animation: floatCake 4s ease-in-out infinite;
+    }
+    @keyframes floatCake {
+        0%,100%{transform:translateY(0px);}
+        50%{transform:translateY(-8px);}
+    }
+
+    .cake {
+        position:relative;
+        transform-style:preserve-3d;
+        animation: spin 12s linear infinite;
+    }
+    @keyframes spin {
+        0%   {transform:rotateY(0deg);}
+        100% {transform:rotateY(360deg);}
+    }
+
+    /* 每一层蛋糕的公共样式 */
+    .layer {
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        border-radius:999px / 60px;
+        box-shadow: inset 0 -10px 15px rgba(0,0,0,0.2),
+                    0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    /* 底层 */
+    .layer.bottom {
+        width:220px;
+        height:70px;
+        background: var(--choco);
+        background-image:
+            repeating-linear-gradient(
+                -45deg,
+                #4a241c 0 10px,
+                #3a1c16 10px 20px
+            );
+        bottom:0;
+    }
+
+    /* 中层 */
+    .layer.mid {
+        width:170px;
+        height:60px;
+        background: var(--cream);
+        background-image:
+            radial-gradient(circle at 20% 20%, #fff 0 20px, transparent 21px),
+            radial-gradient(circle at 80% 40%, #ffe0f3 0 18px, transparent 19px),
+            repeating-linear-gradient(
+                -45deg,
+                #ffb7e6 0 10px,
+                #ffc9ef 10px 20px
+            );
+        border:4px solid #ffd8f5;
+        bottom:55px;
+    }
+
+    /* 顶层 */
+    .layer.top {
+        width:120px;
+        height:50px;
+        background: var(--cream);
+        background-image:
+            repeating-linear-gradient(
+                90deg,
+                #fff4e6 0 15px,
+                #ffe6f9 15px 30px
+            );
+        border:4px solid #fff;
+        bottom:105px;
+    }
+
+    /* 奶油滴边 */
+    .drip {
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        width:180px;
+        height:30px;
+        background:var(--pink);
+        background-image:linear-gradient(#ff6ec788,#ff009588);
+        border-radius:0 0 60px 60px;
+        bottom:85px;
+        filter:drop-shadow(0 6px 4px rgba(0,0,0,0.4));
+    }
+    .drip::before,
+    .drip::after{
+        content:"";
+        position:absolute;
+        width:20px;
+        height:35px;
+        background:var(--pink);
+        background-image:linear-gradient(#ff6ec7,#ff0095);
+        border-radius:20px;
+        box-shadow:0 6px 4px rgba(0,0,0,0.4);
+        animation: dripMove 2.5s ease-in-out infinite;
+    }
+    .drip::before{ left:30px; animation-delay:-1s;}
+    .drip::after{ right:40px;}
+
+    @keyframes dripMove {
+        0%,100%{height:35px;}
+        50%{height:50px;}
+    }
+
+    /* -------------- 蜡烛 -------------- */
+    .candle{
+        position:absolute;
+        left:50%;
+        bottom:150px;
+        transform:translateX(-50%);
+        width:16px;
+        height:50px;
+        background: repeating-linear-gradient(
+            -45deg,
+            #fff 0 6px,
+            #ff7edb 6px 12px
+        );
+        border-radius:4px;
+        box-shadow:0 10px 20px rgba(0,0,0,0.6);
+    }
+
+    .flame{
+        position:absolute;
+        left:50%;
+        top:-22px;
+        transform:translateX(-50%);
+        width:20px;
+        height:28px;
+        background:radial-gradient(circle at 50% 30%, #fffbd1 0%, #ffe66e 40%, #ff9900 70%, transparent 72%);
+        border-radius:50% 50% 50% 50%;
+        filter:blur(1px) drop-shadow(0 0 10px #ffa500);
+        animation: flicker 0.15s infinite;
+    }
+    @keyframes flicker {
+        0%,100%{transform:translateX(-50%) scale(1) rotate(-2deg); opacity:1;}
+        50%{transform:translateX(-50%) scale(0.9) rotate(2deg); opacity:0.8;}
+    }
+
+    /* -------------- 祝福文字卡片 -------------- */
+    .message-card{
+        position:relative;
+        background:rgba(255,255,255,0.05);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:20px;
+        padding:1rem 1.2rem 1.2rem;
+        width:min(90%,360px);
+        color:#fff;
+        font-size:0.95rem;
+        line-height:1.6;
+        box-shadow: var(--shadow);
+        backdrop-filter:blur(10px) saturate(140%);
+    }
+
+    .message-card h2{
+        font-weight:600;
+        font-size:1.05rem;
+        margin-bottom:0.4rem;
+        color:var(--gold);
+        text-shadow:0 0 8px rgba(255,210,125,0.6),0 0 20px rgba(255,210,125,0.4);
+    }
+
+    .message-card p{
+        font-weight:300;
+    }
+
+    .signature{
+        margin-top:0.8rem;
+        font-size:0.8rem;
+        font-weight:400;
+        text-align:right;
+        color:#ffd27d;
+        font-family:'Pacifico',cursive;
+        text-shadow:0 0 8px rgba(255,210,125,0.6);
+    }
+
+    /* -------------- 许愿按钮 -------------- */
+    .wish-btn{
+        cursor:pointer;
+        margin-top:1.5rem;
+        display:inline-block;
+        background:linear-gradient(135deg,#ff6ec7 0%,#ff0095 100%);
+        color:#fff;
+        font-weight:600;
+        border:none;
+        border-radius:999px;
+        padding:0.8rem 1.4rem;
+        font-size:1rem;
+        line-height:1;
+        box-shadow:0 15px 40px rgba(255,0,149,0.6);
+        outline:none;
+        position:relative;
+        overflow:hidden;
+        transition:transform .18s ease;
+    }
+    .wish-btn:active{ transform:scale(0.96); }
+
+    .wish-btn::after{
+        content:"";
+        position:absolute;
+        left:-30%;
+        top:-30%;
+        width:60%;
+        height:160%;
+        background:radial-gradient(circle at 30% 30%,rgba(255,255,255,0.8)0%,rgba(255,255,255,0)70%);
+        transform:rotate(25deg);
+        animation:glint 2.5s infinite linear;
+        opacity:.7;
+    }
+
+    @keyframes glint{
+        0%{left:-30%;}
+        100%{left:110%;}
+    }
+
+    /* -------------- 飘落的爱心/彩纸 -------------- */
+    .floating-layer{
+        pointer-events:none;
+        position:fixed;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        overflow:visible;
+        z-index:9999;
+        font-size:20px;
+    }
+
+    .particle{
+        position:absolute;
+        will-change:transform,opacity;
+        user-select:none;
+    }
+
+    .heart{
+        color:#ff4fa3;
+        text-shadow:0 0 10px rgba(255,0,128,0.6);
+        font-size:clamp(16px,2vw,24px);
+    }
+
+    .confetti{
+        width:8px;
+        height:14px;
+        background:linear-gradient(#fff,#ffd27d);
+        border-radius:2px;
+        box-shadow:0 0 10px rgba(255,255,255,0.7);
+        transform-origin:center;
+    }
+
+    /* 小提示 */
+    .hint {
+        position:fixed;
+        bottom:1rem;
+        width:100%;
+        text-align:center;
+        font-size:.7rem;
+        font-weight:300;
+        letter-spacing:.05em;
+        color:#ffffff66;
+        pointer-events:none;
+        font-family:'Poppins',sans-serif;
+    }
+
+    /* 响应式微调 */
+    @media (min-width:480px){
+        .message-card{
+            font-size:1rem;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+    <div class="title">
+        <span class="typing" id="typing"></span>
+    </div>
+
+    <!-- 蛋糕 -->
+    <div class="cake-wrapper">
+        <div class="cake">
+            <div class="layer bottom"></div>
+            <div class="layer mid"></div>
+            <div class="drip"></div>
+            <div class="layer top"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 情话卡片 -->
+    <div class="message-card">
+        <h2>给世界上最幸福的女孩 🎂</h2>
+        <p>
+            生日快乐呀斌斌 💖<br>
+            愿你永远开心、永远被温柔对待。<br>
+            今天你是全宇宙最可爱的公主。<br>
+        </p>
+        <div class="signature">— 爱你的 Alan</div>
+    </div>
+
+    <button class="wish-btn" id="wishBtn">点我许愿 🎁</button>
+
+</div>
+
+<div class="floating-layer" id="floatingLayer"></div>
+
+<div class="hint">打开声音，闭眼许个愿 ❤️</div>
+
+<script>
+/* ------------------ 打字机效果 ------------------ */
+const typingEl = document.getElementById("typing");
+const text = "Happy Birthday, 斌斌 ✨";
+let i = 0;
+function typeLoop() {
+    if (i <= text.length) {
+        typingEl.textContent = text.slice(0, i);
+        i++;
+        setTimeout(typeLoop, 120);
+    }
+}
+typeLoop();
+
+/* ------------------ 许愿按钮：爱心+彩纸 ------------------ */
+const floatingLayer = document.getElementById("floatingLayer");
+const wishBtn = document.getElementById("wishBtn");
+
+function random(min,max){ return Math.random()*(max-min)+min; }
+
+function spawnHeart(){
+    const h = document.createElement("div");
+    h.className = "particle heart";
+    h.textContent = "❤";
+    const startX = random(10, 90); // vw
+    const startY = 60; // vh around cake area
+    const endY   = startY - random(20,35);
+
+    const duration = random(1.8,2.6);
+    const drift = random(-20,20);
+
+    h.style.left = startX + "vw";
+    h.style.top  = startY + "vh";
+    h.style.opacity = "1";
+    h.style.transform = "translate3d(0,0,0) scale(1)";
+
+    floatingLayer.appendChild(h);
+
+    const start = performance.now();
+    requestAnimationFrame(function anim(t){
+        const p = (t-start)/(duration*1000);
+        if(p>=1){
+            h.remove();
+            return;
+        }
+        const x = drift * p;
+        const y = (endY-startY)*p;
+        const scale = 1 + 0.4*p;
+        h.style.transform = `translate(${x}px, ${y}vh) scale(${scale})`;
+        h.style.opacity = (1-p).toString();
+        requestAnimationFrame(anim);
+    });
+}
+
+function spawnConfetti(){
+    const c = document.createElement("div");
+    c.className="particle confetti";
+
+    const startX = random(0,100); // vw top
+    const rot = random(0,360);
+    const fallY = random(80,100); // vh
+    const duration = random(1.5,2.2);
+
+    c.style.left = startX + "vw";
+    c.style.top = "-5vh";
+    c.style.opacity ="1";
+    c.style.transform = `translate3d(0,0,0) rotate(${rot}deg)`;
+
+    floatingLayer.appendChild(c);
+
+    const start = performance.now();
+    requestAnimationFrame(function anim(t){
+        const p = (t-start)/(duration*1000);
+        if(p>=1){
+            c.remove();
+            return;
+        }
+        const y = fallY * p;
+        const sway = Math.sin(p*6) * 20;
+        const spin = rot + p*360;
+        c.style.transform = `translate(${sway}px, ${y}vh) rotate(${spin}deg)`;
+        c.style.opacity = (1-p).toString();
+        requestAnimationFrame(anim);
+    });
+}
+
+function celebrate(){
+    // 连续喷一波
+    for(let i=0;i<14;i++){
+        setTimeout(spawnHeart, i*80);
+        setTimeout(spawnConfetti, i*50);
+    }
+    // 轻微放大按钮做个反馈
+    wishBtn.animate([
+        { transform:"scale(1)" },
+        { transform:"scale(1.08)" },
+        { transform:"scale(1)" }
+    ], {duration:400, easing:"ease-out"});
+}
+
+wishBtn.addEventListener("click", celebrate);
+
+/* （可选）自动轻轻播放一段“噗噗心动”的音效的话，需要你自己加音频文件，出于浏览器限制这里先不内置音频。 */
+</script>
+
+</body>
+</html>
