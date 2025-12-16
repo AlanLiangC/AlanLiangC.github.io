@@ -21,7 +21,7 @@ const personalInfo = {
         name: "Prof. Huaici Zhao",
         link: "https://people.ucas.edu.cn/~zhaohuaici1"
       },
-      email: "liangao@sia.cn | a_liang@u.nus.edu",
+      email: "liangao@sia.cn (Preferred) | a_liang@u.nus.edu | +86 15271957278",
       interest:
         "I focus on 3D/4D perception for autonomous driving and robotics. I develop robust yet lightweight models to meet unmanned systems’ strict safety and real-time requirements. Lately, I’m hooked on 3D/4D generation, using synthetic data to replace tedious collection and annotation. My goal: Generate data more realistic than reality itself and free researchers from grunt work.",
       visiting: {
@@ -62,12 +62,34 @@ const newsItems = [
   ];
 
 const publications = [
+  {
+      id: 18,
+      image: "public/images/publications/worldlens.png",
+      title: "WorldLens: Full-Spectrum Evaluations of Driving World Models in Real World",
+      author: "Alan Liang*, Lingdong Kong*,‡, Tianyi Yan*, Hongsi Liu*, Wesley Yang*, Ziqi Huang, Wei Yin, et al.",
+      conference: "Arxiv 2025",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2512.10958"},
+              {name:"code",url:"https://github.com/worldbench/WorldLens"},
+              {name:"project", url:"https://worldbench.github.io/worldlens"}]
+  },
+    {
+      id: 17,
+      image: "public/images/publications/e-deflare.png",
+      title: "Learning to Remove Lens Flare in Event Camera",
+      author: "Haiqian Han, Lingdong Kong, Jianing Li, Alan Liang, Chengtao Zhu, Jiacheng Lyu, Lai Xing Ng, Xiangya, et al.",
+      conference: "Arxiv 2025",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2512.09016"},
+              {name:"code",url:"https://github.com/e-flare/toolkit"},
+              {name:"project", url:"https://e-flare.github.io/"}]
+  },
     {
         id: 16,
         image: "public/images/publications/lidarcrafter.png",
         title: "LiDARCrafter: Dynamic 4D World Modeling from LiDAR Sequences",
         author: "Alan Liang, Youquan Liu, Yu Yang, Dongyue Lu, Linfeng Li, Lingdong Kong‡, et al.",
-        conference: "Arxiv 2025",
+        conference: "AAAI 2026 (Oral)",
         details: "",
         links: [{name:"pdf",url:"https://arxiv.org/abs/2508.03692"},
                 {name:"code",url:"https://github.com/lidarcrafter/toolkit"},
@@ -78,7 +100,7 @@ const publications = [
         image: "public/images/publications/la-la-lidar.png",
         title: "La La LiDAR: Large-Scale Layout Generation from LiDAR Data",
         author: "Youquan Liu, Lingdong Kong, Weidong Yang, Xin Li, Alan Liang, et al.",
-        conference: "Arxiv 2025",
+        conference: "AAAI 2026",
         details: "",
         links: [{name:"pdf",url:"https://arxiv.org/abs/2508.03691"},
                 {name:"code",url:""},
@@ -88,7 +110,7 @@ const publications = [
       id: 14,
       image: "public/images/publications/wild3D_workshop.png",
       title: "Learning to Generate 4D LiDAR Sequences",
-      author: "Ao Liang, Youquan Liu, Yu Yang, Dongyue Lu, Linfeng Li, Lingdong Kong, Huaici Zhao, Wei Tsang Ooi",
+      author: "Alan Liang, Youquan Liu, Yu Yang, Dongyue Lu, Linfeng Li, Lingdong Kong, Huaici Zhao, Wei Tsang Ooi",
       conference: "ICCV 2025 Wild3D Workshop",
       details: "",
       links: [{name:"pdf",url:"https://arxiv.org/abs/2509.11959"},
