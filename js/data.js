@@ -77,7 +77,7 @@ const publications = [
       id: 17,
       image: "public/images/publications/e-deflare.png",
       title: "Learning to Remove Lens Flare in Event Camera",
-      author: "Haiqian Han, Lingdong Kong, Jianing Li, Alan Liang, Chengtao Zhu, Jiacheng Lyu, Lai Xing Ng, Xiangya, et al.",
+      author: "Haiqian Han, Lingdong Kong, Jianing Li, Alan Liang, Chengtao Zhu, Jiacheng Lyu, Lai Xing Ng, et al.",
       conference: "Arxiv 2025",
       details: "",
       links: [{name:"pdf",url:"https://arxiv.org/abs/2512.09016"},
