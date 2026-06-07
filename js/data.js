@@ -54,6 +54,7 @@ const personalInfo = {
     }
 
 const newsItems = [
+    { date:"[03/2026]", html:`Our papers <a href="https://cvpr.thecvf.com/virtual/2026/oral/40329" target="_blank" rel="noopener"><strong><u>"WorldLens (Oral)"</u></strong></a>, <a href="https://arxiv.org/abs/2512.02982" target="_blank" rel="noopener"><strong><u>"U4D (Hightlight)"</u></strong></a> and <a href="https://dylanorange.github.io/" target="_blank" rel="noopener"><strong><u>"EventDrive"</u></strong></a> are accepted by <a href="https://www.bing.com/ck/a?!&&p=2783907642f726154cd585ef86caf314a7b307ecebe6d42594f6adaa03ec43d7JmltdHM9MTc4MDc5MDQwMA&ptn=3&ver=2&hsh=4&fclid=211ee6b7-879f-678e-0920-f3ad86d56656&u=a1aHR0cHM6Ly9jdnByLnRoZWN2Zi5jb20vQ29uZmVyZW5jZXMvMjAyNg" target="_blank" rel="noopener"><strong><u>CVPR 2026</u></strong></a>.`},
     { date:"[02/2026]", html:`Our paper <a href="https://see-4d.github.io/" target="_blank" rel="noopener"><strong><u>"See4D"</u></strong></a> is accepted by <a href="https://eg2026.github.io/call_for_full_papers/" target="_blank" rel="noopener"><strong><u>EUROGRAPHICS 2026</u></strong></a>. Congratulations to <a href="https://dylanorange.github.io/" target="_blank" rel="noopener"><strong><u>Pineapple Scholar</u></strong></a>.`},
     { date:"[01/2026]", html:`Our paper <a href="https://arxiv.org/abs/2508.03690" target="_blank" rel="noopener"><strong><u>"Veila"</u></strong></a> is accepted by <a href="https://2026.ieee-icra.org/" target="_blank" rel="noopener"><strong><u>ICRA 2026</u></strong></a>. Congratulations to <a href="https://github.com/youquanl/" target="_blank" rel="noopener"><strong><u>Youquan</u></strong></a>.`},
     { date:"[11/2025]", html:`Our papers <a href="https://arxiv.org/abs/2508.03692" target="_blank" rel="noopener"><strong><u>"LiDARCrafter (Oral)"</u></strong></a> and <a href="https://arxiv.org/html/2508.03691v1" target="_blank" rel="noopener"><strong><u>"La La LiDAR"</u></strong></a> are accepted by <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noopener"><strong><u>AAAI 2026</u></strong></a>.`},
@@ -65,16 +66,60 @@ const newsItems = [
 
 const publications = [
   {
-      id: 18,
+      id: 22,
+      image: "public/images/publications/omnilidar.png",
+      title: "OmniLiDAR: A Unified Diffusion Framework for Multi-Domain 3D LiDAR Generation",
+      author: "Youquan Liu, Weidong Yang, Ao Liang, Xiang Xu, Lingdong Kong, Yang Wu, et al.",
+      conference: "Arxiv 2026",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2605.13815"},
+              {name:"code",url:""},
+              {name:"project", url:""}]
+},
+  {
+      id: 21,
+      image: "public/images/publications/survey_vla4ad.webp",
+      title: "VLA Models for Autonomous Driving: Past, Present, and Future",
+      author: "Tianshuai Hu*, Xiaolu Liu*, Song Wang*, Yiyao Zhu*, Alan Liang*, Lingdong Kong, et al.",
+      conference: "Arxiv 2026",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2512.16760"},
+              {name:"code",url:"https://github.com/worldbench/awesome-vla-for-ad"},
+              {name:"project", url:"https://github.com/worldbench/awesome-vla-for-ad"}]
+},
+  {
+      id: 20,
       image: "public/images/publications/worldlens.png",
       title: "WorldLens: Full-Spectrum Evaluations of Driving World Models in Real World",
       author: "Alan Liang*, Lingdong Kong*,‡, Tianyi Yan*, Hongsi Liu*, Wesley Yang*, Ziqi Huang, Wei Yin, et al.",
-      conference: "Arxiv 2025",
+      conference: "CVPR 2026 (Oral)",
       details: "",
       links: [{name:"pdf",url:"https://arxiv.org/abs/2512.10958"},
               {name:"code",url:"https://github.com/worldbench/WorldLens"},
               {name:"project", url:"https://worldbench.github.io/worldlens"}]
   },
+  {
+    id: 19,
+    image: "public/images/publications/eventdrive.png",
+    title: "EventDrive: Event Cameras for Vision-Language Driving Intelligence",
+    author: "Dongyue Lu, Rong Li, Ao Liang, Lingdong Kong, Wei Yin, et al.",
+    conference: "CVPR 2026",
+    details: "",
+    links: [{name:"pdf",url:"https://dylanorange.github.io/projects/eventdrive/static/files/EventDrive.pdf"},
+            {name:"code",url:"https://huggingface.co/datasets/dylanorange/EventDrive"},
+            {name:"project", url:"https://dylanorange.github.io/projects/eventdrive"}]
+},
+  {
+      id: 18,
+      image: "public/images/publications/U4D.png",
+      title: "U4D: Uncertainty-Aware 4D World Modeling from LiDAR Sequences",
+      author: "Xiang Xu, Alan Liang, Youquan Liu, Linfeng Li, Lingdong Kong, Ziwei Liu, et al.",
+      conference: "CVPR 2026 (Hightlight)",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2512.02982"},
+              {name:"code",url:"https://github.com/worldbench/U4D"},
+              {name:"project", url:"https://github.com/worldbench/U4D"}]
+},
     {
       id: 17,
       image: "public/images/publications/e-deflare.png",
