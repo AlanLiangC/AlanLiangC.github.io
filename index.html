@@ -1,87 +1,70 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alan Liang is a Research Scientist at Shanghai Innovation Institute, working on embodied AI, world models, 4D scene generation, and vision-language navigation.">
+  <meta name="theme-color" content="#f8faff">
   <title>Alan Liang — Research</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- ===== NAV ===== -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <div class="brand">
-        <div class="logo"></div>
-        <h1>Alan Liang</h1>
-      </div>
-      <div class="links">
-        <a class="hide-sm" href="#about">About</a>
-        <a class="hide-sm" href="#news">News</a>
-        <a class="hide-sm" href="#publications">Publications</a>
-        <a class="cta" href="https://github.com/AlanLiangC" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <header class="hero">
-    <canvas id="stars" class="starfield"></canvas>
-    <div class="hero-inner hero-2col">
-      <!-- Left: Profile / Avatar -->
-      <aside class="profile">
-        <div class="avatar-wrap">
-          <img src="public/images/AL.jpg" alt="Alan Liang" class="avatar"/>
-          <div class="avatar-glow" aria-hidden="true"></div>
-        </div>
-        <div class="profile-meta">
-          <h2 class="name">Alan Liang</h2>
-        </div>
-      </aside>
-  
-      <!-- Right: About Card -->
-      <div class="panel about" id="about">
-        <h3 class="about-title">About</h3>
-        <div id="aboutRich"></div>
-        <p class="interest" id="interestText"></p>
-        <div class="badge-row">
-          <span class="badge">3D/4D Perception</span>
-          <span class="badge">3D/4D Generation</span>
-          <span class="badge">World Modeling</span>
-          <span class="badge">Multimodal Large Model</span>
-        </div>
-        <div class="mono" id="contactLine">✉️</div>
-      </div>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#about" aria-label="Alan Liang, home"><span class="identity-orb" aria-hidden="true"></span><span>Alan Liang</span></a>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#publications">Research</a><a href="#experience">Experience</a><a href="#education">Education</a></nav>
+      <a class="header-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
-  <!-- ===== DETAILS & ACKNOWLEDGMENTS ===== -->
-  <section id="details">
-    <!-- <h3 class="section-title">Details & Acknowledgments</h3> -->
-    <div class="panel ack-panel" id="ackPanel"></div>
-  </section>
+  <main>
+    <section class="intro" id="about" aria-labelledby="introTitle">
+      <canvas id="stars" aria-hidden="true"></canvas>
+      <button class="star-toggle" id="starToggle" type="button" aria-pressed="true" aria-label="Turn off background stars"><span aria-hidden="true">✧</span> <span id="starToggleLabel">Stars on</span></button>
+      <aside class="portrait" aria-label="A photo of Alan">
+        <div class="portrait-orbit"><div class="portrait-frame"><img src="public/images/AL.jpg" alt="Alan Liang" width="300" height="350" fetchpriority="high"></div><span class="orbit-dot" aria-hidden="true"></span></div>
+        <p class="portrait-caption"><span aria-hidden="true">⌖</span> Shanghai, China</p>
+      </aside>
+      <div class="intro-copy">
+        <p class="intro-label">About me</p>
+        <h1 id="introTitle">Alan Liang<span class="name-period">.</span></h1>
+        <div class="intro-bio" id="aboutRich"></div>
+        <p class="research-interest" id="interestText"></p>
+        <p class="welcome" id="collaborationText"></p>
+        <div class="intro-links" id="profileLinks"></div>
+      </div>
+      <div class="focus-topics" aria-label="Research interests"><span>Embodied AI</span><span>VLA &amp; WAM</span><span>VLN &amp; 4D memory</span><span>4D scenes &amp; simulation</span></div>
+    </section>
 
+    <section class="research-section" id="publications" aria-labelledby="researchTitle">
+      <div class="section-heading"><h2 id="researchTitle"><span class="section-symbol" aria-hidden="true">✳</span> Selected publications</h2><a class="text-link" id="scholarLink" href="https://scholar.google.com/citations?user=ocyBGGYAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <div class="publication-list" id="pubGrid"></div>
+      <button class="more-button" id="publicationToggle" type="button" aria-expanded="false" aria-controls="pubGrid">View all publications <span aria-hidden="true">↓</span></button>
+    </section>
 
-  <!-- ===== NEWS ===== -->
-  <section id="news">
-    <h3 class="section-title">News</h3>
-    <div class="timeline" id="newsList"></div>
-  </section>
+    <section class="background-section" id="experience" aria-labelledby="experienceTitle">
+      <div class="section-heading"><h2 id="experienceTitle"><span class="section-symbol" aria-hidden="true">⌁</span> Industrial Experience</h2></div>
+      <div class="resume-list experience-grid" id="experienceList"></div>
+    </section>
 
-  <!-- ===== PUBLICATIONS ===== -->
-  <section id="publications">
-    <h3 class="section-title">Selected Publications</h3>
-    <div class="pub-grid" id="pubGrid"></div>
-  </section>
+    <section class="education-section" id="education" aria-labelledby="educationTitle">
+      <div class="section-heading"><h2 id="educationTitle"><span class="section-symbol" aria-hidden="true">◇</span> Education</h2></div>
+      <div class="resume-list education-grid" id="educationList"></div>
+    </section>
 
-  <footer>
-    <div class="foot-inner">
-      <div class="copyright" id="copy"></div>
-      <div class="social" id="socialIcons"></div>
-    </div>
-  </footer>
+    <section class="news-section" id="news" aria-labelledby="newsTitle">
+      <div class="section-heading"><h2 id="newsTitle"><span class="section-symbol" aria-hidden="true">↗</span> News</h2></div>
+      <div class="news-list" id="newsList"></div>
+    </section>
 
-  <!-- JS -->
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-heading"><span class="identity-orb" aria-hidden="true"></span><h2 id="contactTitle">Contact</h2></div>
+      <div class="contact-emails" id="contactLine"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><p id="copy"></p><a href="versions/dark-2026-10-15/">Original dark version</a><a href="#about">Back to top ↑</a></div></footer>
   <script src="js/data.js"></script>
   <script src="js/render.js"></script>
   <script src="js/stars.js"></script>

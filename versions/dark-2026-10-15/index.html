@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alan Liang — Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===== NAV ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>Alan Liang</h1>
+      </div>
+      <div class="links">
+        <a class="hide-sm" href="#about">About</a>
+        <a class="hide-sm" href="#experience">Experience</a>
+        <a class="hide-sm" href="#education">Education</a>
+        <a class="hide-sm" href="#news">News</a>
+        <a class="hide-sm" href="#publications">Publications</a>
+        <a class="cta" href="https://github.com/AlanLiangC" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <canvas id="stars" class="starfield"></canvas>
+    <div class="hero-inner hero-2col">
+      <!-- Left: Profile / Avatar -->
+      <aside class="profile">
+        <div class="avatar-wrap">
+          <img src="../../public/images/AL.jpg" alt="Alan Liang" class="avatar"/>
+          <div class="avatar-glow" aria-hidden="true"></div>
+        </div>
+        <div class="profile-meta">
+          <h2 class="name">Alan Liang</h2>
+        </div>
+      </aside>
+  
+      <!-- Right: About Card -->
+      <div class="panel about" id="about">
+        <h3 class="about-title">About</h3>
+        <div id="aboutRich"></div>
+        <p class="interest" id="interestText"></p>
+        <div class="badge-row">
+          <span class="badge">Embodied AI</span>
+          <span class="badge">VLA &amp; WAM</span>
+          <span class="badge">VLN &amp; 4D Memory</span>
+          <span class="badge">4D Scene Generation</span>
+          <span class="badge">Closed-Loop Simulation</span>
+        </div>
+        <p class="collaboration" id="collaborationText"></p>
+        <div class="mono" id="contactLine">✉️</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== INDUSTRIAL EXPERIENCE ===== -->
+  <section id="experience" aria-labelledby="experienceTitle">
+    <h3 class="section-title" id="experienceTitle">Industrial Experience</h3>
+    <div class="resume-list" id="experienceList"></div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" aria-labelledby="educationTitle">
+    <h3 class="section-title" id="educationTitle">Education</h3>
+    <div class="resume-list" id="educationList"></div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section id="news">
+    <h3 class="section-title">News</h3>
+    <div class="timeline" id="newsList"></div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications">
+    <h3 class="section-title">Selected Publications</h3>
+    <div class="pub-grid" id="pubGrid"></div>
+  </section>
+
+  <footer>
+    <div class="foot-inner">
+      <div class="copyright" id="copy"></div>
+      <div class="social" id="socialIcons"></div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/stars.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+const personalInfo = {
+  name: "Alan Liang",
+  copyright: "harrypotter.me",
+  socialMedia: {
+    Twitter: "https://twitter.com/",
+    LinkedIn: "https://www.linkedin.com/",
+    GoogleScholar: "https://scholar.google.com/citations?user=ocyBGGYAAAAJ&hl=zh-CN",
+    Github: "https://github.com/AlanLiangC"
+  },
+  about: {
+    role: "Research Scientist",
+    institution: {
+      name: "Shanghai Innovation Institute",
+      link: "https://www.sii.edu.cn/main.htm"
+    },
+    collaborators: [
+      { name: "Runnan Chen", link: "https://runnanchen.github.io/" },
+      { name: "Youquan Liu", link: "https://github.com/youquanl/" }
+    ],
+    email: "alanliang@sii.edu.en (Preferred) | alan_liang@aliyun.com",
+    interest: "My research focuses on embodied AI and autonomous driving, particularly vision-language-action models (VLA) and world action models (WAM). I also work on 4D scene generation for closed-loop simulation and vision-language navigation (VLN), aiming to develop agent-driven VLN with 4D memory for spatial and temporal reasoning.",
+    collaboration: "I welcome collaborations and conversations on these topics. Feel free to get in touch!"
+  }
+};
+
+const industrialExperience = [
+  {
+    institution: "Shanghai Innovation Institute",
+    link: "https://www.sii.edu.cn/main.htm",
+    logo: "../../public/images/logos/sii.svg",
+    location: "Shanghai, China",
+    role: "Research Scientist · Embodied AI",
+    period: "Aug 2026 – Present",
+    description: "Developing embodied world models with unified semantic, spatial, and temporal reasoning to enable efficient, reliable, and generalizable decision-making for embodied agents in complex real-world environments."
+  },
+  {
+    institution: "Horizon Robotics",
+    link: "https://www.horizon.auto/about",
+    logo: "../../public/images/logos/horizon.svg",
+    logoTheme: "dark",
+    location: "Shanghai, China",
+    role: "Research Scientist",
+    period: "Oct 2025 – Aug 2026",
+    description: "Developed world models by advancing generative modeling and semantic understanding, with a focus on improving end-to-end planning capabilities for autonomous driving in complex real-world environments."
+  },
+  {
+    institution: "AutoWise.ai",
+    link: "https://autowise.ai/en/company/",
+    logo: "../../public/images/logos/autowise.png",
+    location: "Shanghai, China",
+    role: "Perception Engineer",
+    period: "Dec 2022 – May 2023",
+    description: "Developed multi-task perception models unifying 3D object detection and point cloud segmentation in a single framework, balancing accuracy and inference speed. The unified model was deployed on vehicles."
+  }
+];
+
+const education = [
+  {
+    institution: "University of Chinese Academy of Sciences",
+    link: "https://www.ucas.ac.cn/",
+    logo: "../../public/images/logos/ucas.png",
+    location: "Beijing, China",
+    role: "Ph.D. in Pattern Recognition",
+    period: "2021 – Present",
+    department: { name: "Shenyang Institute of Automation", link: "https://sia.cas.cn/" },
+    distinction: "CAS President’s Scholarship (Special Prize)",
+    advisor: { name: "Prof. Huaici Zhao", link: "https://people.ucas.edu.cn/~zhaohuaici1" }
+  },
+  {
+    institution: "National University of Singapore",
+    link: "https://www.nus.edu.sg/",
+    logo: "../../public/images/logos/nus.png",
+    location: "Singapore",
+    role: "Visiting Ph.D. Student in Computer Science",
+    period: "2024 – 2025",
+    department: { name: "School of Computing", link: "https://www.comp.nus.edu.sg/" },
+    distinction: "CSC Scholarship",
+    advisor: { name: "Prof. Wei Tsang Ooi", link: "https://www.comp.nus.edu.sg/cs/people/ooiwt/" },
+    collaborators: [
+      { name: "Lingdong Kong", link: "https://ldkong.com/", icon: "../../public/images/apple.jpg", iconLabel: "Apple Scholar" },
+      { name: "Dongyue Lu", link: "https://dylanorange.github.io/", icon: "../../public/images/pineapple.png", iconLabel: "Pineapple Scholar" },
+      { name: "Yu Yang", link: "https://yuyang-cloud.github.io/", icon: "../../public/images/potatoes.png", iconLabel: "Potato Scholar" }
+    ]
+  }
+];
+
+const newsItems = [
+    { date:"[03/2026]", html:`Our papers <a href="https://cvpr.thecvf.com/virtual/2026/oral/40329" target="_blank" rel="noopener"><strong><u>"WorldLens (Oral)"</u></strong></a>, <a href="https://arxiv.org/abs/2512.02982" target="_blank" rel="noopener"><strong><u>"U4D (Hightlight)"</u></strong></a> and <a href="https://dylanorange.github.io/" target="_blank" rel="noopener"><strong><u>"EventDrive"</u></strong></a> are accepted by <a href="https://www.bing.com/ck/a?!&&p=2783907642f726154cd585ef86caf314a7b307ecebe6d42594f6adaa03ec43d7JmltdHM9MTc4MDc5MDQwMA&ptn=3&ver=2&hsh=4&fclid=211ee6b7-879f-678e-0920-f3ad86d56656&u=a1aHR0cHM6Ly9jdnByLnRoZWN2Zi5jb20vQ29uZmVyZW5jZXMvMjAyNg" target="_blank" rel="noopener"><strong><u>CVPR 2026</u></strong></a>.`},
+    { date:"[02/2026]", html:`Our paper <a href="https://see-4d.github.io/" target="_blank" rel="noopener"><strong><u>"See4D"</u></strong></a> is accepted by <a href="https://eg2026.github.io/call_for_full_papers/" target="_blank" rel="noopener"><strong><u>EUROGRAPHICS 2026</u></strong></a>. Congratulations to <a href="https://dylanorange.github.io/" target="_blank" rel="noopener"><strong><u>Pineapple Scholar</u></strong></a>.`},
+    { date:"[01/2026]", html:`Our paper <a href="https://arxiv.org/abs/2508.03690" target="_blank" rel="noopener"><strong><u>"Veila"</u></strong></a> is accepted by <a href="https://2026.ieee-icra.org/" target="_blank" rel="noopener"><strong><u>ICRA 2026</u></strong></a>. Congratulations to <a href="https://github.com/youquanl/" target="_blank" rel="noopener"><strong><u>Youquan</u></strong></a>.`},
+    { date:"[11/2025]", html:`Our papers <a href="https://arxiv.org/abs/2508.03692" target="_blank" rel="noopener"><strong><u>"LiDARCrafter (Oral)"</u></strong></a> and <a href="https://arxiv.org/html/2508.03691v1" target="_blank" rel="noopener"><strong><u>"La La LiDAR"</u></strong></a> are accepted by <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noopener"><strong><u>AAAI 2026</u></strong></a>.`},
+    { date:"[08/2025]", html:`Our papers <a href="https://arxiv.org/abs/2507.17664" target="_blank" rel="noopener"><strong><u>"Talk2Event (Spotlight)"</u></strong></a>, <a href="https://arxiv.org/abs/2506.13558" target="_blank" rel="noopener"><strong><u>"X-Scene"</u></strong></a> and <a href="https://project-3eed.github.io/" target="_blank" rel="noopener"><strong><u>"3EED"</u></strong></a> are accepted by <a href="https://neurips.cc/Conferences/2025/CallForPapers" target="_blank" rel="noopener"><strong><u>NeurlPS 2025</u></strong></a>.`},
+    { date:"[06/2025]", html:`<strong>Track 5: Cross-Platform 3D Object Detection</strong> of the <a href="https://robosense2025.github.io/" target="_blank" rel="noopener"><strong><u>RoboSense Challenge</u></strong></a> at <a href="https://www.iros25.org/" target="_blank" rel="noopener"><strong><u>IROS 2025</u></strong></a> is now live! See the <a href="https://robosense2025.github.io/track5" target="_blank" rel="noopener"><strong><u>track homepage</u></strong></a>, <a href="https://github.com/robosense2025/track5" target="_blank" rel="noopener"><strong><u>GitHub repo</u></strong></a>. Contact: <a href="mailto:robosense2025@gmail.com"><strong><u>robosense2025@gmail.com</u></strong></a> or my <a href="https://alanliang.vercel.app/" target="_blank" rel="noopener"><strong><u>personal page</u></strong></a>.` },
+    { date:"[06/2025]", html:`We are hosting the <a href="https://robosense2025.github.io/" target="_blank" rel="noopener"><strong><u>RoboSense Challenge</u></strong></a> at <a href="https://www.iros25.org/" target="_blank" rel="noopener"><strong><u>IROS 2025</u></strong></a>.`},
+    { date:"[05/2025]", html:`Our paper <a href="https://arxiv.org/abs/2507.17665" target="_blank" rel="noopener"><strong><u>"Perspective-Invariant 3D Object Detection"</u></strong></a> is accepted by <a href="https://iccv.thecvf.com/" target="_blank" rel="noopener"><strong><u>ICCV 2025</u></strong></a>.`},
+  ];
+
+const publications = [
+  {
+      id: 22,
+      image: "../../public/images/publications/omnilidar.png",
+      title: "OmniLiDAR: A Unified Diffusion Framework for Multi-Domain 3D LiDAR Generation",
+      author: "Youquan Liu, Weidong Yang, Ao Liang, Xiang Xu, Lingdong Kong, Yang Wu, et al.",
+      conference: "Arxiv 2026",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2605.13815"},
+              {name:"code",url:""},
+              {name:"project", url:""}]
+},
+  {
+      id: 21,
+      image: "../../public/images/publications/survey_vla4ad.webp",
+      title: "VLA Models for Autonomous Driving: Past, Present, and Future",
+      author: "Tianshuai Hu*, Xiaolu Liu*, Song Wang*, Yiyao Zhu*, Alan Liang*, Lingdong Kong, et al.",
+      conference: "Arxiv 2026",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2512.16760"},
+              {name:"code",url:"https://github.com/worldbench/awesome-vla-for-ad"},
+              {name:"project", url:"https://github.com/worldbench/awesome-vla-for-ad"}]
+},
+  {
+      id: 20,
+      image: "../../public/images/publications/worldlens.png",
+      title: "WorldLens: Full-Spectrum Evaluations of Driving World Models in Real World",
+      author: "Alan Liang*, Lingdong Kong*,‡, Tianyi Yan*, Hongsi Liu*, Wesley Yang*, Ziqi Huang, Wei Yin, et al.",
+      conference: "CVPR 2026 (Oral)",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2512.10958"},
+              {name:"code",url:"https://github.com/worldbench/WorldLens"},
+              {name:"project", url:"https://worldbench.github.io/worldlens"}]
+  },
+  {
+    id: 19,
+    image: "../../public/images/publications/eventdrive.png",
+    title: "EventDrive: Event Cameras for Vision-Language Driving Intelligence",
+    author: "Dongyue Lu, Rong Li, Ao Liang, Lingdong Kong, Wei Yin, et al.",
+    conference: "CVPR 2026",
+    details: "",
+    links: [{name:"pdf",url:"https://dylanorange.github.io/projects/eventdrive/static/files/EventDrive.pdf"},
+            {name:"code",url:"https://huggingface.co/datasets/dylanorange/EventDrive"},
+            {name:"project", url:"https://dylanorange.github.io/projects/eventdrive"}]
+},
+  {
+      id: 18,
+      image: "../../public/images/publications/U4D.png",
+      title: "U4D: Uncertainty-Aware 4D World Modeling from LiDAR Sequences",
+      author: "Xiang Xu, Alan Liang, Youquan Liu, Linfeng Li, Lingdong Kong, Ziwei Liu, et al.",
+      conference: "CVPR 2026 (Hightlight)",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2512.02982"},
+              {name:"code",url:"https://github.com/worldbench/U4D"},
+              {name:"project", url:"https://github.com/worldbench/U4D"}]
+},
+    {
+      id: 17,
+      image: "../../public/images/publications/e-deflare.png",
+      title: "Learning to Remove Lens Flare in Event Camera",
+      author: "Haiqian Han, Lingdong Kong, Jianing Li, Alan Liang, Chengtao Zhu, Jiacheng Lyu, Lai Xing Ng, et al.",
+      conference: "Arxiv 2025",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2512.09016"},
+              {name:"code",url:"https://github.com/e-flare/toolkit"},
+              {name:"project", url:"https://e-flare.github.io/"}]
+  },
+    {
+        id: 16,
+        image: "../../public/images/publications/lidarcrafter.png",
+        title: "LiDARCrafter: Dynamic 4D World Modeling from LiDAR Sequences",
+        author: "Alan Liang, Youquan Liu, Yu Yang, Dongyue Lu, Linfeng Li, Lingdong Kong‡, et al.",
+        conference: "AAAI 2026 (Oral)",
+        details: "",
+        links: [{name:"pdf",url:"https://arxiv.org/abs/2508.03692"},
+                {name:"code",url:"https://github.com/lidarcrafter/toolkit"},
+                {name:"project", url:"https://lidarcrafter.github.io/"}]
+    },
+    {
+        id: 15,
+        image: "../../public/images/publications/la-la-lidar.png",
+        title: "La La LiDAR: Large-Scale Layout Generation from LiDAR Data",
+        author: "Youquan Liu, Lingdong Kong, Weidong Yang, Xin Li, Alan Liang, et al.",
+        conference: "AAAI 2026",
+        details: "",
+        links: [{name:"pdf",url:"https://arxiv.org/abs/2508.03691"},
+                {name:"code",url:""},
+                {name:"project", url:""}]
+    },
+    {
+      id: 14,
+      image: "../../public/images/publications/wild3D_workshop.png",
+      title: "Learning to Generate 4D LiDAR Sequences",
+      author: "Alan Liang, Youquan Liu, Yu Yang, Dongyue Lu, Linfeng Li, Lingdong Kong, Huaici Zhao, Wei Tsang Ooi",
+      conference: "ICCV 2025 Wild3D Workshop",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2509.11959"},
+              {name:"code",url:""},
+              {name:"project", url:""}]
+  },
+    {
+        id: 13,
+        image: "../../public/images/publications/veila.png",
+        title: "Veila: Scaling Diffusion Models for Panoramic LiDAR Point Cloud Generation from a Single Image",
+        author: "Youquan Liu, Lingdong Kong, Weidong Yang, Alan Liang, Jianxiong Gao, et al.",
+        conference: "Arxiv 2025",
+        details: "",
+        links: [{name:"pdf",url:"https://arxiv.org/abs/2508.03690"},
+                {name:"code",url:""},
+                {name:"project", url:""}]
+    },
+    {
+        id: 12,
+        image: "../../public/images/publications/worldbench_survey.webp",
+        title: "3D and 4D World Modeling: A Survey",
+        author: "Lingdong Kong*, Wesley Yang*, Jianbiao Mei*, Youquan Liu*, Alan Liang*, Dekai Zhu*, Dongyue Lu*, Wei Yin*, et al.",
+        conference: "Arxiv 2025",
+        details: "",
+        links: [{name:"pdf",url:"https://worldbench.github.io/survey.pdf"},
+                {name:"code",url:"https://github.com/worldbench/survey"},
+                {name:"project", url:"https://worldbench.github.io/survey"}]
+    },
+    {
+        id: 11,
+        image: "../../public/images/publications/see4d.png",
+        title: "See4D: Pose-Free 4D Generation via Auto-Regressive Video Inpainting",
+        author: "Dongyue Lu*, Alan Liang*, Tianxin Huang, Xiao Fu, Yuyang Zhao, Baorui Ma, Lingdong Kong‡, Ziwei Liu",
+        conference: "Arxiv 2025",
+        details: "",
+        links: [{name:"pdf",url:""},
+                {name:"code",url:""},
+                {name:"project", url:"https://see-4d.github.io/"}]
+    },
+    {
+      id: 10,
+      image: "../../public/images/publications/talk2event_workshp.png",
+      title: "Visual Grounding from Event Cameras",
+      author: "Lingdong Kong*, Dongyue Lu*, Ao Liang*, Rong Li, Yuhao Dong, Tianshuai Hu, Lai Xing Ng, Wei Tsang Ooi, Benoit R. Cottereau",
+      conference: "ICCV 2025 NeVi Workshop",
+      details: "",
+      links: [{name:"pdf",url:"https://arxiv.org/abs/2509.09584"},
+              {name:"code",url:""},
+              {name:"project", url:""}]
+  },
+    { 
+        id:9, 
+        image:"../../public/images/publications/xscene.png", 
+        author:"Yu Yang, Alan Liang, Jianbiao Mei, Yukai Ma, Yong Liu, Gim Hee Lee", 
+        title:"𝒳-Scene: Large-Scale Driving Scene Generation with High Fidelity and Flexible Controllability", 
+        conference:"NeurlPS 2025 (Poster)", 
+        details:"", 
+        links:[{name:"pdf",url:"https://arxiv.org/abs/2506.13558"},
+                {name:"code",url:"https://x-scene.github.io/"},
+                {name:"project",url:"https://x-scene.github.io/"}]
+    },
+    { id:8, image:"../../public/images/publications/talk2event.png", author:"Lingdong Kong*, Dongyue Lu*, Alan Liang*, Rong Li, Yuhao Dong, Tianshuai Hu, Lai Xing Ng, Wei Tsang Ooi, Benoit R. Cottereau", title:"Talk2Event: Grounded Understanding of Dynamic Scenes from Event Cameras", conference:"NeurlPS 2025 (Spotlight)", details:"", links:[{name:"pdf",url:"https://arxiv.org/abs/2507.17664"},{name:"code",url:""},{name:"project",url:"https://talk2event.github.io/"}]},
+    { id:7, image:"../../public/images/publications/3eed.jpg", author:"Rong Li*, Yuhao Dong*, Tianshuai Hu*, Alan Liang*, Youquan Liu*, Dongyue Lu*, Liang Pan, Lingdong Kong‡, Junwei Liang, Ziwei Liu", title:"3EED: Ground Everything Everywhere in 3D", conference:"NeurlPS 2025 DB Track (Poster)", details:"", links:[{name:"pdf",url:""},{name:"code",url:"https://rongli.tech/"},{name:"project",url:"https://project-3eed.github.io/"}]},
+    {   id:6, 
+        image:"../../public/images/publications/pi3det.jpg", 
+        author:"Alan Liang*, Lingdong Kong*, Dongyue Lu*, Youquan Liu, Jian Fang, Huaici Zhao, Wei Tsang Ooi", 
+        title:"Perspective-Invariant 3D Object Detection", 
+        conference:"International Conference on Computer Vision", details:" (ICCV 2025)", links:[{name:"pdf",url:"https://robosense2025.github.io/track5"},{name:"code",url:"https://github.com/robosense2025/track5"},{name:"project",url:"https://robosense2025.github.io/"}]},
+    { id:5, image:"../../public/images/publications/sgccnet.png", author:"Alan Liang, Wenyu Chen, Jian Fang, Huaici Zhao", title:"SGCCNet: Single-Stage 3D Object Detector With Saliency-Guided Data Augmentation and Confidence Correction Mechanism", conference:"Arxiv 2024", details:"", links:[{name:"pdf",url:"https://arxiv.org/abs/2407.01239"},{name:"code",url:"https://github.com/AlanLiangC/SGCCNet"},{name:"project",url:"https://github.com/AlanLiangC/SGCCNet"}]},
+    { id:4, image:"../../public/images/publications/pdmssd.png", author:"Alan Liang, Haiyang Hua, Jian Fang, Wenyu Chen, Huaici Zhao", title:"PDM-SSD: Single-Stage Three-Dimensional Object Detector With Point Dilation", conference:"Arxiv 2024", details:"", links:[{name:"pdf",url:"https://arxiv.org/abs/2502.07822"},{name:"code",url:"https://github.com/AlanLiangC/PDM-SSD"},{name:"project",url:"https://github.com/AlanLiangC/PDM-SSD"}]},
+    { id:3, image:"../../public/images/publications/suprnet.png", author:"Alan Liang, Wenyu Chen, Jian Fang, Huaici Zhao", title:"SuPrNet: Super Proxy for 4D occupancy forecasting", conference:"Knowledge-Based Systems", details:" (CAS 1st TOP Quartile, IF: 7.2)", links:[{name:"pdf",url:"https://www.sciencedirect.com/science/article/pii/S0950705124009663"},{name:"code",url:"https://github.com/AlanLiangC/4DPCF"},{name:"project",url:"https://github.com/AlanLiangC/4DPCF"}]},
+    { id:2, image:"../../public/images/publications/spsnet.png", author:"Alan Liang, Hao Zhang, Haiyang Hua, Wenyu Chen, Huaici Zhao", title:"SPSNet: Boosting 3D point-based object detectors with stable point sampling", conference:"Engineering Applications of Artificial Intelligence", details:" (CAS 1st TOP Quartile, IF: 7.5)", links:[{name:"pdf",url:"https://www.sciencedirect.com/science/article/pii/S0952197623009910"},{name:"code",url:"https://github.com/AlanLiangC/SPSNet"},{name:"project",url:"https://github.com/AlanLiangC/SPSNet"}]},
+    { id:1, image:"../../public/images/publications/drfssd.png", author:"Alan Liang, Haiyang Hua, Jian Fang, Huaici Zhao, Tianci Liu", title:"Boosting 3D point-based object detection by reducing information loss caused by discontinuous receptive fields", conference:"International Journal of Applied Earth Observation and Geoinformation", details:" (CAS 1st TOP Quartile, IF: 7.6)", links:[{name:"pdf",url:"https://www.sciencedirect.com/science/article/pii/S1569843224004035"},{name:"code",url:"https://github.com/AlanLiangC/DRF-SSD.git"},{name:"project",url:"https://github.com/AlanLiangC/DRF-SSD.git"}]}
+    ];

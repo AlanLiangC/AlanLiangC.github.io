@@ -1,57 +1,89 @@
 const personalInfo = {
-    name: "Alan Liang",
-    copyright: "harrypotter.me",
-    socialMedia: {
-      Twitter: "https://twitter.com/",
-      LinkedIn: "https://www.linkedin.com/",
-      GoogleScholar: "https://scholar.google.com/citations?user=ocyBGGYAAAAJ&hl=zh-CN",
-      Github: "https://github.com/AlanLiangC"
+  name: "Alan Liang",
+  copyright: "harrypotter.me",
+  socialMedia: {
+    Twitter: "https://twitter.com/",
+    LinkedIn: "https://www.linkedin.com/",
+    GoogleScholar: "https://scholar.google.com/citations?user=ocyBGGYAAAAJ&hl=zh-CN",
+    Github: "https://github.com/AlanLiangC"
+  },
+  about: {
+    role: "Research Scientist",
+    institution: {
+      name: "Shanghai Innovation Institute",
+      link: "https://www.sii.edu.cn/main.htm"
     },
-    about: {
-      year: "4th-year",
-      department: {
-        name: "Shenyang Institute of Automation",
-        link: "https://sia.cas.cn/"
-      },
-      college: {
-        name: "Chinese Academy of Sciences",
-        link: "https://www.ucas.ac.cn/"
-      },
-      advisor: {
-        name: "Prof. Huaici Zhao",
-        link: "https://people.ucas.edu.cn/~zhaohuaici1"
-      },
-      email: "liangao@sia.cn (Preferred) | a_liang@u.nus.edu | +86 15271957278",
-      interest:
-        "I focus on 3D/4D perception for autonomous driving and robotics. I develop robust yet lightweight models to meet unmanned systems’ strict safety and real-time requirements. Lately, I’m hooked on 3D/4D generation, using synthetic data to replace tedious collection and annotation. My goal: Generate data more realistic than reality itself and free researchers from grunt work.",
-      visiting: {
-        text: "Now, I am a visiting student at NUS advised by",
-        ooi: {
-          name: "Prof. Wei Tsang Ooi",
-          link: "https://www.comp.nus.edu.sg/cs/people/ooiwt/"
-        }
-      },
-    },
-    acknowledgmentsHtml: `
-    <div class="text-sm text-gray-400">
-      Since October 2024, I have been funded by the
-      <a href="https://www.csc.edu.cn/" target="_blank" rel="noopener noreferrer"><strong><u>China Scholarship Council (CSC)</u></strong></a>
-      to join the
-      <a href="https://www.comp.nus.edu.sg/cs/" target="_blank" rel="noopener noreferrer"><strong><u>School of Computing</u></strong></a>
-      at the
-      <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener noreferrer"><strong><u>National University of Singapore</u></strong></a>.
-      I am honored to be advised by
-      <a href="https://www.comp.nus.edu.sg/cs/people/ooiwt/" target="_blank" rel="noopener noreferrer"><strong><u>Prof. Wei Tsang Ooi</u></strong></a>.
-      I am also fortunate to collaborate closely with
-      <a href="https://ldkong.com/" target="_blank" rel="noopener noreferrer"><strong><u>Lingdong Kong</u></strong></a>
-      (<a href="https://machinelearning.apple.com/work-with-us#scholars" target="_blank" rel="noopener noreferrer"><strong><u>Apple Scholar</u><img class="inline-icon" src="public/images/apple.jpg" alt="Apple Scholar"/></u></strong></a>),
-      <a href="https://dylanorange.github.io/" target="_blank" rel="noopener noreferrer"><strong><u>Dongyue Lu</u></strong></a>
-      ("Pineapple Scholar"<img class="inline-icon" src="public/images/pineapple.png" alt="Pineapple Scholar"/>),
-      and
-      <a href="https://yuyang-cloud.github.io/" target="_blank" rel="noopener noreferrer"><strong><u>Yu Yang</u></strong></a>
-      ("Potato Scholar"<img class="inline-icon" src="public/images/potatoes.png" alt="Potato Scholar"/>).
-    </div>`
-    }
+    collaborators: [
+      { name: "Runnan Chen", link: "https://runnanchen.github.io/" },
+      { name: "Youquan Liu", link: "https://github.com/youquanl/" }
+    ],
+    email: "alanliang@sii.edu.en (Preferred) | alan_liang@aliyun.com",
+    interest: "I study vision-language-action (VLA) models and world action models (WAM) for embodied AI and autonomous driving. My work on 4D scene generation focuses on closed-loop simulation. I am also exploring agent-driven vision-language navigation (VLN), with the goal of using 4D memory to support spatial and temporal reasoning.",
+    collaboration: "I welcome collaborations and conversations on these topics. Feel free to get in touch!"
+  }
+};
+
+const industrialExperience = [
+  {
+    institution: "Shanghai Innovation Institute",
+    link: "https://www.sii.edu.cn/main.htm",
+    logo: "public/images/logos/sii.svg",
+    location: "Shanghai, China",
+    role: "Research Scientist · Embodied AI",
+    period: "Aug 2026 – Present",
+    description: "Developing embodied world models with unified semantic, spatial, and temporal reasoning to enable efficient, reliable, and generalizable decision-making for embodied agents in complex real-world environments."
+  },
+  {
+    institution: "Horizon Robotics",
+    link: "https://www.horizon.auto/about",
+    logo: "public/images/logos/horizon.svg",
+    logoTheme: "dark",
+    location: "Shanghai, China",
+    role: "Research Scientist",
+    period: "Oct 2025 – Aug 2026",
+    mentor: { name: "Wei Yin", link: "https://yvanyin.xyz/" },
+    description: "Developed world models by advancing generative modeling and semantic understanding, with a focus on improving end-to-end planning capabilities for autonomous driving in complex real-world environments."
+  },
+  {
+    institution: "AutoWise.ai",
+    link: "https://autowise.ai/en/company/",
+    logo: "public/images/logos/autowise.png",
+    location: "Shanghai, China",
+    role: "Perception Engineer",
+    period: "Dec 2022 – May 2023",
+    description: "Developed multi-task perception models unifying 3D object detection and point cloud segmentation in a single framework, balancing accuracy and inference speed. The unified model was deployed on vehicles."
+  }
+];
+
+const education = [
+  {
+    institution: "University of Chinese Academy of Sciences",
+    link: "https://www.ucas.ac.cn/",
+    logo: "public/images/logos/ucas.png",
+    location: "Beijing, China",
+    role: "Ph.D. in Pattern Recognition",
+    period: "2021 – Present",
+    department: { name: "Shenyang Institute of Automation", link: "https://sia.cas.cn/" },
+    distinction: "CAS President’s Scholarship (Special Prize)",
+    advisor: { name: "Prof. Huaici Zhao", link: "https://people.ucas.edu.cn/~zhaohuaici1" }
+  },
+  {
+    institution: "National University of Singapore",
+    link: "https://www.nus.edu.sg/",
+    logo: "public/images/logos/nus.png",
+    location: "Singapore",
+    role: "Visiting Ph.D. Student in Computer Science",
+    period: "2024 – 2025",
+    department: { name: "School of Computing", link: "https://www.comp.nus.edu.sg/" },
+    distinction: "CSC Scholarship",
+    advisor: { name: "Prof. Wei Tsang Ooi", link: "https://www.comp.nus.edu.sg/cs/people/ooiwt/" },
+    collaborators: [
+      { name: "Lingdong Kong", link: "https://ldkong.com/", icon: "public/images/apple.jpg", iconLabel: "Apple Scholar" },
+      { name: "Dongyue Lu", link: "https://dylanorange.github.io/", icon: "public/images/pineapple.png", iconLabel: "Pineapple Scholar" },
+      { name: "Yu Yang", link: "https://yuyang-cloud.github.io/", icon: "public/images/potatoes.png", iconLabel: "Potato Scholar" }
+    ]
+  }
+];
 
 const newsItems = [
     { date:"[03/2026]", html:`Our papers <a href="https://cvpr.thecvf.com/virtual/2026/oral/40329" target="_blank" rel="noopener"><strong><u>"WorldLens (Oral)"</u></strong></a>, <a href="https://arxiv.org/abs/2512.02982" target="_blank" rel="noopener"><strong><u>"U4D (Hightlight)"</u></strong></a> and <a href="https://dylanorange.github.io/" target="_blank" rel="noopener"><strong><u>"EventDrive"</u></strong></a> are accepted by <a href="https://www.bing.com/ck/a?!&&p=2783907642f726154cd585ef86caf314a7b307ecebe6d42594f6adaa03ec43d7JmltdHM9MTc4MDc5MDQwMA&ptn=3&ver=2&hsh=4&fclid=211ee6b7-879f-678e-0920-f3ad86d56656&u=a1aHR0cHM6Ly9jdnByLnRoZWN2Zi5jb20vQ29uZmVyZW5jZXMvMjAyNg" target="_blank" rel="noopener"><strong><u>CVPR 2026</u></strong></a>.`},
@@ -226,10 +258,9 @@ const publications = [
         author:"Alan Liang*, Lingdong Kong*, Dongyue Lu*, Youquan Liu, Jian Fang, Huaici Zhao, Wei Tsang Ooi", 
         title:"Perspective-Invariant 3D Object Detection", 
         conference:"International Conference on Computer Vision", details:" (ICCV 2025)", links:[{name:"pdf",url:"https://robosense2025.github.io/track5"},{name:"code",url:"https://github.com/robosense2025/track5"},{name:"project",url:"https://robosense2025.github.io/"}]},
-    { id:5, image:"public/images/publications/sgccnet.png", author:"Alan Liang, Wenyu Chen, Jian Fang, Huaici Zhao", title:"SGCCNet: Single-Stage 3D Object Detector With Saliency-Guided Data Augmentation and Confidence Correction Mechanism", conference:"Arxiv 2024", details:"", links:[{name:"pdf",url:"https://arxiv.org/abs/2407.01239"},{name:"code",url:"https://github.com/AlanLiangC/SGCCNet"},{name:"project",url:"https://github.com/AlanLiangC/SGCCNet"}]},
+    { id:5, image:"public/images/publications/sgccnet.png", author:"Alan Liang, Wenyu Chen, Jian Fang, Huaici Zhao", title:"SGCCNet: Single-Stage 3D Object Detector With Saliency-Guided Data Augmentation and Confidence Correction Mechanism", conference:"IEEE Transactions on Intelligent Vehicles (T-IV)", details:" (CAS 1st TOP Quartile, IF: 14.2)", links:[{name:"pdf",url:"https://arxiv.org/abs/2407.01239"},{name:"code",url:"https://github.com/AlanLiangC/SGCCNet"},{name:"project",url:"https://github.com/AlanLiangC/SGCCNet"}]},
     { id:4, image:"public/images/publications/pdmssd.png", author:"Alan Liang, Haiyang Hua, Jian Fang, Wenyu Chen, Huaici Zhao", title:"PDM-SSD: Single-Stage Three-Dimensional Object Detector With Point Dilation", conference:"Arxiv 2024", details:"", links:[{name:"pdf",url:"https://arxiv.org/abs/2502.07822"},{name:"code",url:"https://github.com/AlanLiangC/PDM-SSD"},{name:"project",url:"https://github.com/AlanLiangC/PDM-SSD"}]},
     { id:3, image:"public/images/publications/suprnet.png", author:"Alan Liang, Wenyu Chen, Jian Fang, Huaici Zhao", title:"SuPrNet: Super Proxy for 4D occupancy forecasting", conference:"Knowledge-Based Systems", details:" (CAS 1st TOP Quartile, IF: 7.2)", links:[{name:"pdf",url:"https://www.sciencedirect.com/science/article/pii/S0950705124009663"},{name:"code",url:"https://github.com/AlanLiangC/4DPCF"},{name:"project",url:"https://github.com/AlanLiangC/4DPCF"}]},
     { id:2, image:"public/images/publications/spsnet.png", author:"Alan Liang, Hao Zhang, Haiyang Hua, Wenyu Chen, Huaici Zhao", title:"SPSNet: Boosting 3D point-based object detectors with stable point sampling", conference:"Engineering Applications of Artificial Intelligence", details:" (CAS 1st TOP Quartile, IF: 7.5)", links:[{name:"pdf",url:"https://www.sciencedirect.com/science/article/pii/S0952197623009910"},{name:"code",url:"https://github.com/AlanLiangC/SPSNet"},{name:"project",url:"https://github.com/AlanLiangC/SPSNet"}]},
     { id:1, image:"public/images/publications/drfssd.png", author:"Alan Liang, Haiyang Hua, Jian Fang, Huaici Zhao, Tianci Liu", title:"Boosting 3D point-based object detection by reducing information loss caused by discontinuous receptive fields", conference:"International Journal of Applied Earth Observation and Geoinformation", details:" (CAS 1st TOP Quartile, IF: 7.6)", links:[{name:"pdf",url:"https://www.sciencedirect.com/science/article/pii/S1569843224004035"},{name:"code",url:"https://github.com/AlanLiangC/DRF-SSD.git"},{name:"project",url:"https://github.com/AlanLiangC/DRF-SSD.git"}]}
     ];
-  
